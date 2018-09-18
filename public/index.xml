@@ -25,6 +25,15 @@ Scientific research has indicated that, however severe pain you are suffering no
     </item>
     
     <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Tue, 11 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I am a Associate Professor in SWUFE.</description>
+    </item>
+    
+    <item>
       <title>A Plain Markdown Post</title>
       <link>/2016/12/30/a-plain-markdown-post/</link>
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
@@ -81,15 +90,6 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 #
       <description>By David Wong
 The World Only Cares About What It Can Get from You By virtue of your birth &amp;ndash; the moment you came into the world, you became part of a system designed purely to see to people&amp;rsquo;s needs.
 Either you will go about the task of seeing to those needs by learning a unique set of skills, or the world will reject you, no matter how kind, giving, and polite you are.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I am a Associate Professor in SWUFE.</description>
     </item>
     
     <item>

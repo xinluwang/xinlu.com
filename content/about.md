@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-date: " September 2018"
+date: "2018-09-11"
 ---
 
 I am a Associate Professor in SWUFE.
