@@ -5,6 +5,14 @@
   <url>
     <loc>/2018/09/18/test-post/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+<<<<<<< HEAD
+=======
+  </url>
+  
+  <url>
+    <loc>/2016/12/30/a-plain-markdown-post/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+>>>>>>> 4212c98ee9524862454c67e21105736149ff1dd7
   </url>
   
   <url>
@@ -28,10 +36,13 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/about/</loc>
   </url>
   
   <url>
+=======
+>>>>>>> 4212c98ee9524862454c67e21105736149ff1dd7
     <loc>/1/01/01/</loc>
   </url>
   
@@ -46,10 +57,13 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/about/</loc>
   </url>
   
   <url>
+=======
+>>>>>>> 4212c98ee9524862454c67e21105736149ff1dd7
     <loc>/tags/bash/</loc>
     <priority>0</priority>
   </url>
