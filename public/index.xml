@@ -6,10 +6,23 @@
     <description>Recent content on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>读刘未鹏的《暗时间》第二篇</title>
+      <link>/2018/09/18/test-post/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/09/18/test-post/</guid>
+      <description>思维改变生活  Things you heard, you forget; things you experienced, you remember.   亲身经历一个负性事件带来的情绪记忆要比看着或听说别人遭受一个同样的事件所感受到的强烈得多，形成的负性条件反射也远远更持久。
+There is no 感同身受.
+A few lines of reasoning can change the way we see the world.
+ People underestimate how much they can endure the misery.
+Scientific research has indicated that, however severe pain you are suffering now, it will have little impact on how happy you are six months later. Therefore, never buy insurance.</description>
+    </item>
     
     <item>
       <title>A Plain Markdown Post</title>
@@ -50,7 +63,15 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 #
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
-<<<<<<< HEAD
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>读刘未鹏的《暗时间》第二篇 /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
+    </item>
+    
     <item>
       <title>6 Harsh Truth that will Make You a Better Person</title>
       <link>/1/01/01/6-harsh-truth-that-will-make-you-a-better-person/</link>
@@ -260,19 +281,6 @@ Think out of the box.
     </item>
     
     <item>
-      <title>读刘未鹏的《暗时间》第二篇</title>
-      <link>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%BA%8C%E7%AF%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%BA%8C%E7%AF%87/</guid>
-      <description>思维改变生活  Things you heard, you forget; things you experienced, you remember.   亲身经历一个负性事件带来的情绪记忆要比看着或听说别人遭受一个同样的事件所感受到的强烈得多，形成的负性条件反射也远远更持久。
-There is no 感同身受.
-A few lines of reasoning can change the way we see the world.
- People underestimate how much they can endure the misery.
-Scientific research has indicated that, however severe pain you are suffering now, it will have little impact on how happy you are six months later. Therefore, never buy insurance.</description>
-    </item>
-    
-    <item>
       <title>转载：Your Presentation Needs a Punch Line [HBR]</title>
       <link>/1/01/01/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -297,7 +305,5 @@ It was late Saturday night on Chicago’s North Side, and the historic Green Mil
 在稳定增长中寻找超额收益 策略说明  P = PE \( \times \) EPS 可以推出 \( \Delta \)P =\( \Delta \)PE + \( \Delta \)EPS + \( \Delta \)PE \( \times \) \( \Delta \)EPS</description>
     </item>
     
-=======
->>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
   </channel>
 </rss>
