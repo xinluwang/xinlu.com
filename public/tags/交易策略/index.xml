@@ -23,7 +23,7 @@
  Joseph D. Piotroski 在Journal of Accounting Research 上发表了一篇文章” Value investing: The use of historical financial statement information to separate winners from losers”。他提出了9个财务指标 来对股票进行打分， 根据打分的高低将股票区分出来。他的这套打分方法称为 Piotroski scoring。
  该模型的九个指标是：
  扣除非经常性损益后的净利润 扣除非经常性损益后的净利润的增长 每股经营活动现金流量净额 每股经营活动现金流量净额与每股净利润的差值 长期负债比例的增长 流动性比率的增长 总股本的增长 销售毛利率的增长 总资产周转率的增长   可能改进 该模型对每个因子仅作0和1的区别，实际上可以给每个因子权重，然后用training data 给出优化的权重。因为在不同的市场上，投资者看中的指标可能并不一样。中国市场跟 美国市场可能会有很大区别。
-在稳定增长中寻找超额收益 策略说明  P = PE $\times$ EPS 可以推出 $\Delta$P = $\Delta$PE + $\Delta$EPS + $\Delta$PE $\times$ $\Delta$EPS</description>
+在稳定增长中寻找超额收益 策略说明  $$ P = PE \times EPS $$ 可以推出 $$\Delta P = \Delta PE + \Delta EPS + \Delta PE \times \Delta EPS $$</description>
     </item>
     
   </channel>
