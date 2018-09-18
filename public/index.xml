@@ -50,6 +50,7 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 #
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>6 Harsh Truth that will Make You a Better Person</title>
       <link>/1/01/01/6-harsh-truth-that-will-make-you-a-better-person/</link>
@@ -296,5 +297,7 @@ It was late Saturday night on Chicago’s North Side, and the historic Green Mil
 在稳定增长中寻找超额收益 策略说明  P = PE \( \times \) EPS 可以推出 \( \Delta \)P =\( \Delta \)PE + \( \Delta \)EPS + \( \Delta \)PE \( \times \) \( \Delta \)EPS</description>
     </item>
     
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
   </channel>
 </rss>

@@ -12,6 +12,7 @@
     
     
     <item>
+<<<<<<< HEAD
       <title></title>
       <link>/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -93,6 +94,8 @@
     </item>
     
     <item>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
       <title>Plot</title>
       <link>/tags/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
@@ -102,6 +105,7 @@
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>Presentation</title>
       <link>/tags/presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,6 +124,8 @@
     </item>
     
     <item>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
@@ -137,6 +143,7 @@
       <description></description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>Rstudio</title>
       <link>/tags/rstudio/</link>
@@ -281,5 +288,7 @@
       <description></description>
     </item>
     
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
   </channel>
 </rss>

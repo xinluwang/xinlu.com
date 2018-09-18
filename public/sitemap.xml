@@ -23,6 +23,7 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/</loc>
     <priority>0</priority>
   </url>
@@ -32,22 +33,28 @@
   </url>
   
   <url>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
     <loc>/</loc>
     <lastmod>2016-12-30T21:49:57-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/bash/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/1/01/01/code-and-data-for-the-social-sciences/</loc>
   </url>
   
@@ -103,6 +110,8 @@
   </url>
   
   <url>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
     <loc>/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -115,6 +124,7 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/presentation/</loc>
     <priority>0</priority>
   </url>
@@ -130,6 +140,8 @@
   </url>
   
   <url>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
     <loc>/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -142,16 +154,20 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/1/01/01/r-and-rstudio-tricks/</loc>
   </url>
   
   <url>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
     <loc>/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/1/01/01/reproducible-research/</loc>
   </url>
   
@@ -180,11 +196,14 @@
   </url>
   
   <url>
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
     <loc>/tags/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
+<<<<<<< HEAD
   <url>
     <loc>/tags/tesseract/</loc>
     <priority>0</priority>
@@ -304,4 +323,6 @@
     <loc>/1/01/01/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</loc>
   </url>
   
+=======
+>>>>>>> d2213e4633881abd78a70ca6bd5d5dce810d97b9
 </urlset>
