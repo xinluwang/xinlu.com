@@ -80,6 +80,23 @@ install.packages(&amp;quot;Quandl&amp;quot;) library(Quandl) data &amp;lt;- Quan
     </item>
     
     <item>
+      <title>Data Visualization Tools</title>
+      <link>/2016/06/08/data-visualization-tools/</link>
+      <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/08/data-visualization-tools/</guid>
+      <description>来自知乎问题有哪些值得推荐的数据可视化工具？的总结
+Tagxedo 的在线词云生成工具 Python的word cloud模块，结合jibe分词模块可以实现分词并生成词云。
+遮罩用于定义词云的形状。
+Google Books Ngrams 谷歌扫描的三千万册书进行分词并做词频统计，沿着整个历史时间轴来研究语言在历史中的变迁。 在Ngrams中，分别输入首字母大写的“Science, Philosophy, Religion”，和小写的“science, philosophy, religion”，我们得到如下两张图。在大写的图中（下图一），可以清楚看到在公元1600到1800年间，宗教是压倒性强势，然后是哲学，相比之下，科学还是没影的事。但1850年是转折点，科学慢慢占据优势，比宗教和哲学加起来都大。
+百度Echarts 动态类型切换： 大规模散点图：（感觉这个超级酷炫的！好像还有专利的）
+Google Chart API，Google sheets for world map 在Google Video和Google Finance中使用了它，后来觉得，如果能开放它让其他用户也使用的话，会是件不错的事情。 Google Chart API工具从简单的折线图到复杂的分级树形图，他的图表库里提供了海量的模版可供选择。但Google Chart有个大问题：图表在客户端生成，这意味着那些不支持JavaScript的设备将无法使用。
+Tableau Public（Business Intelligence and Analytics） 这是Tableau的免费版本。操作简单，出的成品很有美感。学生可以免费。
+R packages  library(ggplot2) library(leaflet) Leaflet是为移动端友好型交互地图所做的开源JavaScript库 github devtools::install_github(&amp;quot;chgrl/leafletR&amp;quot;) github  WolframAlpha WolframAlpha把自己称作计算型知识引擎、谷歌在分析领域的劲敌。它最棒的一点是在显示图表时可以不需要任何配置就响应数据请求。如果你用的是公开的数据，那么你只需一个简单的小部件生成器就能在你的网页上轻松加入可视化数据。
+flowingdata http://flowingdata.com/</description>
+    </item>
+    
+    <item>
       <title>Code and Data for the Social Sciences</title>
       <link>/2016/06/07/code-and-data-for-the-social-sciences/</link>
       <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
@@ -246,23 +263,6 @@ How to use your time more efficiently  Time is one dimension, and intensity is t
       
       <guid>/1/01/01/</guid>
       <description>量化交易策略总结 /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
-    </item>
-    
-    <item>
-      <title>Data Visualization Tools</title>
-      <link>/1/01/01/data-visualization-tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/data-visualization-tools/</guid>
-      <description>来自知乎问题有哪些值得推荐的数据可视化工具？的总结
-Tagxedo 的在线词云生成工具 Python的word cloud模块，结合jibe分词模块可以实现分词并生成词云。
-遮罩用于定义词云的形状。
-Google Books Ngrams 谷歌扫描的三千万册书进行分词并做词频统计，沿着整个历史时间轴来研究语言在历史中的变迁。 在Ngrams中，分别输入首字母大写的“Science, Philosophy, Religion”，和小写的“science, philosophy, religion”，我们得到如下两张图。在大写的图中（下图一），可以清楚看到在公元1600到1800年间，宗教是压倒性强势，然后是哲学，相比之下，科学还是没影的事。但1850年是转折点，科学慢慢占据优势，比宗教和哲学加起来都大。
-百度Echarts 动态类型切换： 大规模散点图：（感觉这个超级酷炫的！好像还有专利的）
-Google Chart API，Google sheets for world map 在Google Video和Google Finance中使用了它，后来觉得，如果能开放它让其他用户也使用的话，会是件不错的事情。 Google Chart API工具从简单的折线图到复杂的分级树形图，他的图表库里提供了海量的模版可供选择。但Google Chart有个大问题：图表在客户端生成，这意味着那些不支持JavaScript的设备将无法使用。
-Tableau Public（Business Intelligence and Analytics） 这是Tableau的免费版本。操作简单，出的成品很有美感。学生可以免费。
-R packages  library(ggplot2) library(leaflet) Leaflet是为移动端友好型交互地图所做的开源JavaScript库 github devtools::install_github(&amp;quot;chgrl/leafletR&amp;quot;) github  WolframAlpha WolframAlpha把自己称作计算型知识引擎、谷歌在分析领域的劲敌。它最棒的一点是在显示图表时可以不需要任何配置就响应数据请求。如果你用的是公开的数据，那么你只需一个简单的小部件生成器就能在你的网页上轻松加入可视化数据。
-flowingdata http://flowingdata.com/</description>
     </item>
     
   </channel>

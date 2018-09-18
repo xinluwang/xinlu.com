@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/2016/06/08/data-visualization-tools/</loc>
+    <lastmod>2016-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2016/06/07/code-and-data-for-the-social-sciences/</loc>
     <lastmod>2016-06-07T00:00:00+00:00</lastmod>
   </url>
@@ -135,10 +140,6 @@
   </url>
   
   <url>
-    <loc>/1/01/01/data-visualization-tools/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/hbr/</loc>
     <lastmod>2015-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -237,11 +238,6 @@
   <url>
     <loc>/tags/version-control/</loc>
     <lastmod>2016-06-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/visualization/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,13 +1,8 @@
 ---
 layout: post
 title: "Data Visualization Tools"
-date: 2016-006-08
-categories:
-- Programming
+date: 2016-06-08
 
-Tags:
-- Visualization
-- Data
 ---
 
 来自知乎问题[有哪些值得推荐的数据可视化工具？](https://www.zhihu.com/question/19929609)的总结

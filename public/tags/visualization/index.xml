@@ -6,16 +6,17 @@
     <description>Recent content in Visualization on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jun 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Visualization Tools</title>
-      <link>/1/01/01/data-visualization-tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>/2016/06/08/data-visualization-tools/</link>
+      <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/data-visualization-tools/</guid>
+      <guid>/2016/06/08/data-visualization-tools/</guid>
       <description>来自知乎问题有哪些值得推荐的数据可视化工具？的总结
 Tagxedo 的在线词云生成工具 Python的word cloud模块，结合jibe分词模块可以实现分词并生成词云。
 遮罩用于定义词云的形状。
