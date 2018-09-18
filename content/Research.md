@@ -2,7 +2,7 @@
 title: "Research Projects and Publications"
 ---
 
-# Journal Articles
+## Journal Articles
 
 1. 
 
@@ -10,7 +10,7 @@ title: "Research Projects and Publications"
 
 
 
-# Current working projects
+## Current working projects
 
 1. 
 

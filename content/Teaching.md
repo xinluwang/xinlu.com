@@ -2,8 +2,8 @@
 title: "Teaching courses"
 ---
 
-## Advanced Financial Accounting 
+### Advanced Financial Accounting 
 
 
 
-## Textual Analysis using Python
+### Textual Analysis using Python
