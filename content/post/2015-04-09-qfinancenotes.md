@@ -2,12 +2,6 @@
 layout: post
 title: "量化交易策略总结"
 date: 2015-04-09
-categories:
-- 读书笔记
-
-Tags:
-- 交易策略
-- 股票
 ---
 
 
@@ -55,10 +49,7 @@ separate winners from losers”。他提出了9个财务指标 来对股票进�
 
 ### 策略说明
 
-- $$ P = PE \times  EPS $$ 可以推出  $$\Delta P =  \Delta PE +
-    \Delta EPS +  \Delta PE  \times   \Delta EPS $$
-
--  $$P = PB  \times  NAPS  $$
+<img src="/post/2015-04-09-qfinancenotes_files/Snip20180918_1.png" alt="" width="70%"/>
 
 - 分别考虑“金融”公司和“非金融”公司
 
