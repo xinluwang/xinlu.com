@@ -1,6 +1,7 @@
 ---
 title: "About Me"
-date: "2018-09-11"
 ---
 
-I am a Associate Professor in SWUFE.
+I am an Associate Professor in SWUFE. I believe in open source. 
+
+**Email:** xinlu.wang@outlook.com

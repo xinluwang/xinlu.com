@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2018/07/16/ocr-for-english-and-chinese/</loc>
     <lastmod>2018-07-16T00:00:00+00:00</lastmod>
   </url>
@@ -109,6 +104,14 @@
   </url>
   
   <url>
+    <loc>/teaching/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/bash/</loc>
     <lastmod>2016-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -192,6 +195,10 @@
   </url>
   
   <url>
+    <loc>/research/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/rstudio/</loc>
     <lastmod>2016-06-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -216,6 +223,10 @@
   </url>
   
   <url>
+    <loc>/teaching/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/tesseract/</loc>
     <lastmod>2018-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -229,7 +240,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
