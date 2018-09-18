@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on A Hugo website</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bash</title>
+      <link>/tags/bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>/tags/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>/tags/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Happiness</title>
+      <link>/tags/happiness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/happiness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hbr</title>
+      <link>/tags/hbr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hbr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>/tags/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathjax</title>
+      <link>/tags/mathjax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mathjax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ocr</title>
+      <link>/tags/ocr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ocr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plot</title>
+      <link>/tags/plot/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>/tags/presentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/presentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>/tags/r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstudio</title>
+      <link>/tags/rstudio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sas</title>
+      <link>/tags/sas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stata</title>
+      <link>/tags/stata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tesseract</title>
+      <link>/tags/tesseract/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tesseract/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>/tags/version-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>/tags/visualization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webpage</title>
+      <link>/tags/webpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/webpage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yuval Noah Harari</title>
+      <link>/tags/yuval-noah-harari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/yuval-noah-harari/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>交易策略</title>
+      <link>/tags/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>人类简史</title>
+      <link>/tags/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>休息</title>
+      <link>/tags/%E4%BC%91%E6%81%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E4%BC%91%E6%81%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>平凡的世界</title>
+      <link>/tags/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文摘</title>
+      <link>/tags/%E6%96%87%E6%91%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%96%87%E6%91%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>时间管理</title>
+      <link>/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>暗时间</title>
+      <link>/tags/%E6%9A%97%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%9A%97%E6%97%B6%E9%97%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>股票</title>
+      <link>/tags/%E8%82%A1%E7%A5%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E8%82%A1%E7%A5%A8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

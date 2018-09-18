@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yuval Noah Harari on A Hugo website</title>
+    <link>/tags/yuval-noah-harari/</link>
+    <description>Recent content in Yuval Noah Harari on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/yuval-noah-harari/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>《Sapiens: A Brief History of Humankind》读书笔记</title>
+      <link>/1/01/01/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>The state and the market approached people with an offer that could not be refused. &amp;lsquo;Become individuals,&amp;rsquo; they said. &amp;lsquo;Marry whomever you desire, without asking permission from your parents. Take up whatever job suits you, even if community elders frown. Live wherever you wish, even if you cannot make it every week to the family dinner. You are no longer dependent on your family or your community. We, the state and the market, will take care of you instead.</description>
+    </item>
+    
+  </channel>
+</rss>

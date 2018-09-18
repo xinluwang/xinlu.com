@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression on A Hugo website</title>
+    <link>/tags/regression/</link>
+    <description>Recent content in Regression on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 ## Median :15.0 Median : 36 ## Mean :15.4 Mean : 43 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression and group by in R</title>
+      <link>/1/01/01/linear-regression-and-group-by-in-r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/linear-regression-and-group-by-in-r/</guid>
+      <description>Here&amp;rsquo;s one way using the lme4 package.
+&amp;gt; library(lme4) &amp;gt; d &amp;lt;- data.frame(state=rep(c(&#39;NY&#39;, &#39;CA&#39;), c(10, 10)), + year=rep(1:10, 2), + response=c(rnorm(10), rnorm(10))) &amp;gt; xyplot(response ~ year, groups=state, data=d, type=&#39;l&#39;) &amp;gt; fits &amp;lt;- lmList(response ~ year | state, data=d) &amp;gt; fits Call: lmList(formula = response ~ year | state, data = d) Coefficients: (Intercept) year CA -1.34420990 0.17139963 NY 0.00196176 -0.01852429 Degrees of freedom: 20 total; 16 residual Residual standard error: 0.</description>
+    </item>
+    
+  </channel>
+</rss>

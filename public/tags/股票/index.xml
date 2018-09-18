@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>股票 on A Hugo website</title>
+    <link>/tags/%E8%82%A1%E7%A5%A8/</link>
+    <description>Recent content in 股票 on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/%E8%82%A1%E7%A5%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>量化交易策略总结</title>
+      <link>/1/01/01/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</guid>
+      <description>Piotroski选股策略 策略说明  Piotroski选股策略是在P/B最低的20%的股票中按照9个财务指标打分，将这 些打分加起来得到每只股票的得分，分值为0-9之间的整数。
+ 在美国1976年到1996年二十年的时间里，得分为9的组合年化收益率为 15.9%，而得分为0的组合年化收益率为-6.1%，二者相差23% 。而同期标普 500的回报率为11.1%。
+ 2008年，AAII(American Association of Individual Investors)跟踪的56 个选股策略中只有一个策略的收益率为正，那就是Piotroski的选股策略， 当年收益率为32.6%。而所有策略的回报率的中位数为-41.7%。
+ Joseph D. Piotroski 在Journal of Accounting Research 上发表了一篇文章” Value investing: The use of historical financial statement information to separate winners from losers”。他提出了9个财务指标 来对股票进行打分， 根据打分的高低将股票区分出来。他的这套打分方法称为 Piotroski scoring。
+ 该模型的九个指标是：
+ 扣除非经常性损益后的净利润 扣除非经常性损益后的净利润的增长 每股经营活动现金流量净额 每股经营活动现金流量净额与每股净利润的差值 长期负债比例的增长 流动性比率的增长 总股本的增长 销售毛利率的增长 总资产周转率的增长   可能改进 该模型对每个因子仅作0和1的区别，实际上可以给每个因子权重，然后用training data 给出优化的权重。因为在不同的市场上，投资者看中的指标可能并不一样。中国市场跟 美国市场可能会有很大区别。
+在稳定增长中寻找超额收益 策略说明  P = PE \( \times \) EPS 可以推出 \( \Delta \)P =\( \Delta \)PE + \( \Delta \)EPS + \( \Delta \)PE \( \times \) \( \Delta \)EPS</description>
+    </item>
+    
+  </channel>
+</rss>

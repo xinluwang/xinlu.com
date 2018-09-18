@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on A Hugo website</title>
+    <link>/tags/bash/</link>
+    <description>Recent content in Bash on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code and Data for the Social Sciences</title>
+      <link>/1/01/01/code-and-data-for-the-social-sciences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/code-and-data-for-the-social-sciences/</guid>
+      <description>Automate everything  Automate everything that can be automated. Write a single script that executes all code from beginning to end. 写一个terminal执行文件，可以执行不同软件的结果。 &amp;gt; let’s add another key script to the directory, called rundirectory.bat, which is a Windows shell script. Its contents look like this:  ---- rundirectory.bat ---- stattransfer export_to_csv.stc statase -b mergefiles.do statase -b cleandata.do statase -b regressions.do statase -b figures.do pdflatex tv_potato.tex  The rundirectory.bat script works like a roadmap.</description>
+    </item>
+    
+  </channel>
+</rss>

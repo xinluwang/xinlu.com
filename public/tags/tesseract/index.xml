@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tesseract on A Hugo website</title>
+    <link>/tags/tesseract/</link>
+    <description>Recent content in Tesseract on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/tesseract/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OCR for English and Chinese</title>
+      <link>/1/01/01/ocr-for-english-and-chinese/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/ocr-for-english-and-chinese/</guid>
+      <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
+tesseract project in github
+Install ImageMagick for image conversion:
+brew install imagemagick  Install tesseract for OCR:
+brew install tesseract --with-all-languages  Or install without --all-languages and install them manually as needed.
+Make sure the input image is a grayscale .tif and fairly large. ~500x150 was too small, while ~2000*500 worked very well.
+convert input.png -resize 400% -type Grayscale input.tif  OCR it. The default language is English.</description>
+    </item>
+    
+  </channel>
+</rss>

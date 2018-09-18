@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/2016/12/30/a-plain-markdown-post/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/07/23/hello-r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2015/01/01/lorem-ipsum/</loc>
+    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/6-harsh-truth-that-will-make-you-a-better-person/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bash/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/code-and-data-for-the-social-sciences/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/data/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/data-visualization-tools/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/github/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/happiness/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hbr/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/latex/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/linear-regression-and-group-by-in-r/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/mathjax/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/ocr-for-english-and-chinese/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/ocr/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/people-should-learn-in-their-20s---rich-tatum/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/plot/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/presentation/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/programming/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/r-and-rstudio-tricks/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/reproducible-research/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/research/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sas/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/several-public-data-sources/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/stata/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tesseract/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/things-to-stop-doing-in-2015-from-hbr/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/using-mathjax-on-githubpages/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/version-control/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/visualization/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/webpage/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/yuval-noah-harari/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E4%BC%91%E6%81%AF/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E4%BC%91%E6%81%AF/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%96%87%E6%91%98/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%96%87%E6%91%98/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%9A%97%E6%97%B6%E9%97%B4/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%82%A1%E7%A5%A8/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%89%E7%AF%87/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</loc>
+  </url>
+  
+</urlset>
