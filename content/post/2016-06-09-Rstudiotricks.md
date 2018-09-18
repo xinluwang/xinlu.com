@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "R and Rstudio Tricks"
+date: 2016-06-09
 categories:
 - Programming
 

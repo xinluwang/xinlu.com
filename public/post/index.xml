@@ -6,32 +6,131 @@
     <description>Recent content in Posts on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>读刘未鹏的《暗时间》第二篇</title>
-      <link>/2018/09/18/test-post/</link>
-      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      <title>OCR for English and Chinese</title>
+      <link>/2018/07/16/ocr-for-english-and-chinese/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/09/18/test-post/</guid>
-      <description>思维改变生活  Things you heard, you forget; things you experienced, you remember.   亲身经历一个负性事件带来的情绪记忆要比看着或听说别人遭受一个同样的事件所感受到的强烈得多，形成的负性条件反射也远远更持久。
-There is no 感同身受.
-A few lines of reasoning can change the way we see the world.
- People underestimate how much they can endure the misery.
-Scientific research has indicated that, however severe pain you are suffering now, it will have little impact on how happy you are six months later. Therefore, never buy insurance.</description>
+      <guid>/2018/07/16/ocr-for-english-and-chinese/</guid>
+      <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
+tesseract project in github
+Install ImageMagick for image conversion:
+brew install imagemagick  Install tesseract for OCR:
+brew install tesseract --with-all-languages  Or install without --all-languages and install them manually as needed.
+Make sure the input image is a grayscale .tif and fairly large. ~500x150 was too small, while ~2000*500 worked very well.
+convert input.png -resize 400% -type Grayscale input.tif  OCR it. The default language is English.</description>
+    </item>
+    
+    <item>
+      <title>用R进行数据格式转换(SAS, Stata)</title>
+      <link>/2017/11/22/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/22/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</guid>
+      <description>​ 我们在进行合作研究的时候，经常面临的的一个问题就是，一个Co-author给的数据集是stata格式的(.dta), 而我们用的是SAS，或者相反，还有很多研究者习惯用SAS清洗数据，完成后用Stata 跑回归，在这些情况下我们都会面临一个数据格式转换的问题，那么今天我们就来谈一下如何用R来帮助格式转换。
+ 为什么是R? 因为它是开源的，你可以在没有安装SAS和Stata的情况下完成.sas7bdat和.dta的转换
+ 看到R有些人可能就要关闭文章了，因为不想又学一个软件，其实，我们完成数据转换不需要真正的搞懂R的code，只需要跟着我一步一步来就可以了，比把大象装冰箱还简单。
+ 下载安装R 到R的官网下载安装对应平台的R程序。
+ 安装需要的packages
+  # 类似于Stata的 ssc install install.packages(&#39;haven&#39;, repos = &#39;http://cran.us.r-project.org&#39;) # 表示我们要从R的官网安装一个包名字叫 haven  然后我们就可以用啦 ~
+SAS 转 Stata 把下面的code粘贴单R的console里面，等着
+library(haven) # 加载包 dataset &amp;lt;- read_sas(&amp;quot;C:/example.sas7bdat&amp;quot;) # 把SAS数据读进来 # 把它导出为14版本的stata数据 # version 可以是8 -14 的任何一个 # 你也可以借此完成不同的stata版本数据的转化 write_dta(dataset, &amp;quot;C:/example.dta&amp;quot;, version = 14)  Stata 转 SAS 把下面的code粘贴单R的console里面，等着
+library(haven) # 加载包 dataset &amp;lt;- read_dta(&amp;quot;C:/example.dta&amp;quot;) # 把Stata数据读进来 write_sas(dataset, &amp;quot;C:/example.</description>
     </item>
     
     <item>
       <title>A Plain Markdown Post</title>
       <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>/2016/12/30/a-plain-markdown-post/</guid>
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
  You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+    </item>
+    
+    <item>
+      <title>Several Public Data Sources</title>
+      <link>/2016/06/19/several-public-data-sources/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/19/several-public-data-sources/</guid>
+      <description>World Bank Data http://data.worldbank.org/
+Topics on :
+UNdata http://data.un.org/
+ education fruit export poverty health indonesia web
+ Population  Data USA https://www.data.gov/
+Data USA, an online application developed by a team of data scientists at MIT Media Lab and Datawheel, backed by Deloitte is helping Americans visualize demographic and economic data using an open source platform.
+中国国家统计局数据 http://data.stats.gov.cn/
+Quandl https://www.quandl.com/
+install.packages(&amp;quot;Quandl&amp;quot;) library(Quandl) data &amp;lt;- Quandl(&amp;quot;FRED/GDP&amp;quot;) head(data)  Topics on :</description>
+    </item>
+    
+    <item>
+      <title>R and Rstudio Tricks</title>
+      <link>/2016/06/09/r-and-rstudio-tricks/</link>
+      <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/09/r-and-rstudio-tricks/</guid>
+      <description>Shortcut  Alt+- gives the assign operator &amp;lt;- Ctrl+Alt+Left/right arrow switches between open files Ctrl+Space gives autocomplete options Ctrl+Left/right arrow jumps one word Ctrl+shift+C to un-comment, simply re-highlight and hit Ctrl+shift+C again. The Tab key on your keyboard will help you (particularly in RStudio) by offering ways to finish your code. If you start typing mea and hit tab, it will suggest mean() among other things. If you type mean(~hwy, data=vehicles, and hit tab, it will tell you the other arguments you can use for the mean() function.</description>
+    </item>
+    
+    <item>
+      <title>Code and Data for the Social Sciences</title>
+      <link>/2016/06/07/code-and-data-for-the-social-sciences/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/07/code-and-data-for-the-social-sciences/</guid>
+      <description>Automate everything  Automate everything that can be automated. Write a single script that executes all code from beginning to end. 写一个terminal执行文件，可以执行不同软件的结果。 &amp;gt; let’s add another key script to the directory, called rundirectory.bat, which is a Windows shell script. Its contents look like this:  ---- rundirectory.bat ---- stattransfer export_to_csv.stc statase -b mergefiles.do statase -b cleandata.do statase -b regressions.do statase -b figures.do pdflatex tv_potato.tex  The rundirectory.bat script works like a roadmap.</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research</title>
+      <link>/2016/06/06/reproducible-research/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/06/reproducible-research/</guid>
+      <description>Do not do things by hand
+ remov outliers QA /QC validating editing tables and figures moving data around your computer down load data from a website  Do not use GUI (Point and Click)
+ can not be repeated  Teach your computer to do the job
+ even if you only do it once down load data from a website, unzip it   download.file(&amp;quot;http://-address- dataset.zip&amp;quot;, &amp;quot;project/dataset.zip&amp;quot;)   Do use some version control</description>
+    </item>
+    
+    <item>
+      <title>如何正确的休息</title>
+      <link>/2016/06/01/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E4%BC%91%E6%81%AF/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/01/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E4%BC%91%E6%81%AF/</guid>
+      <description> 脑力劳动者，补瞌睡对你没什么用  比如你星期五写了5个小时的企划案，最好第二天去给你的盆栽们剪枝而不是睡到太阳晒屁股。还有一点，当你无法选择由脑力劳动转入体力劳动时，你不妨在脑力劳动内部转换。
+法国杰出的启蒙思想家卢梭就讲过他的心得：“我本不是一个生来适于研究学问的人，因为我用功的时间稍长一些就感到疲倦，甚至我不能一连半小时集中精力于一个问题上。但是，我连续研究几个不同的问题，即使是不间断，我也能够轻松愉快地一个一个地寻思下去，这一个问题可以消除另一个问题所带来的疲劳，用不着休息一下脑筋。于是，我就在我的治学中充分利用我所发现的这一特点，对一些问题交替进行研究。这样，即使我整天用功也不觉得疲倦了。”所以，如果你有好几个问题要处理，最好交替进行，而不要处理完一个再开始第二个，那样会很快被耗尽。
+ 最好的休息，是让你重燃生活的热情  我们的疲惫主要来自对现有的一成不变的生活的厌倦。所以最好的休息项目就是那些让我们重新找到生活和工作热情的活动。如果你干完一件事，能够幸福地感叹“明天又是新的一天。”那这件事对你来说就是最好的恢复热情，调节情绪的方法。
+以“做”来解决“累”，用积极休息取代消极放纵。
+ 不必停下来，只是换一下  去健身房。 看小说、看演出，比如舞台剧等。 学一项新技能，滑雪，滑冰。 去社交。不要以为它总是令人疲惫的。虽然和看书比起来，它稍有点令人紧张，但也能让你更兴奋，更有认同感。 睡前三小时内不要吃东西，尤其忌油腻辛辣。 晚九点以后不要喝水将尿液排空，肾脏得到很好的休息，并防止半夜起来去洗手间打断睡眠。  </description>
+    </item>
+    
+    <item>
+      <title>People should learn in their 20s - Rich Tatum</title>
+      <link>/2016/05/07/people-should-learn-in-their-20s---rich-tatum/</link>
+      <pubDate>Sat, 07 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/07/people-should-learn-in-their-20s---rich-tatum/</guid>
+      <description>From Rich Tatum
+ Most people are very focused on superficial problems and jump from one to another, as you yourself mostly do. Your problems are much smaller than you make them out to be. Meditation makes this abundantly clear, and everything else much easier. There&amp;rsquo;s a profound connection between your body&amp;rsquo;s well-being and your mental and emotional well-being. As you age you can&amp;rsquo;t fuck off with terrible exercise and eating habits like you did when you were young.</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression and group by in R</title>
+      <link>/2015/12/27/linear-regression-and-group-by-in-r/</link>
+      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/12/27/linear-regression-and-group-by-in-r/</guid>
+      <description>Here&amp;rsquo;s one way using the lme4 package.
+&amp;gt; library(lme4) &amp;gt; d &amp;lt;- data.frame(state=rep(c(&#39;NY&#39;, &#39;CA&#39;), c(10, 10)), + year=rep(1:10, 2), + response=c(rnorm(10), rnorm(10))) &amp;gt; xyplot(response ~ year, groups=state, data=d, type=&#39;l&#39;) &amp;gt; fits &amp;lt;- lmList(response ~ year | state, data=d) &amp;gt; fits Call: lmList(formula = response ~ year | state, data = d) Coefficients: (Intercept) year CA -1.34420990 0.17139963 NY 0.00196176 -0.01852429 Degrees of freedom: 20 total; 16 residual Residual standard error: 0.</description>
     </item>
     
     <item>
@@ -46,12 +145,89 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 #
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      <title>《Sapiens: A Brief History of Humankind》读书笔记</title>
+      <link>/2015/07/02/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 02 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/2015/07/02/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>The state and the market approached people with an offer that could not be refused. &amp;lsquo;Become individuals,&amp;rsquo; they said. &amp;lsquo;Marry whomever you desire, without asking permission from your parents. Take up whatever job suits you, even if community elders frown. Live wherever you wish, even if you cannot make it every week to the family dinner. You are no longer dependent on your family or your community. We, the state and the market, will take care of you instead.</description>
+    </item>
+    
+    <item>
+      <title>转载：Your Presentation Needs a Punch Line [HBR]</title>
+      <link>/2015/05/30/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/05/30/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</guid>
+      <description>By Annette Ferrara
+It was late Saturday night on Chicago’s North Side, and the historic Green Mill jazz club was buzzing with nervous energy. So was I. Pacing on the edge of the tiny stage, I gave my notes one final glance, exterminated the butterflies in my stomach, and stepped into the blinding spotlight. “Welcome to the inaugural edition of Mortified Chicago!” I shouted into the mic. “Tonight, real people will read their teenage diaries in front of you, total strangers.</description>
+    </item>
+    
+    <item>
+      <title>量化交易策略总结</title>
+      <link>/2015/04/09/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 09 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/04/09/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</guid>
+      <description>Piotroski选股策略 策略说明  Piotroski选股策略是在P/B最低的20%的股票中按照9个财务指标打分，将这 些打分加起来得到每只股票的得分，分值为0-9之间的整数。
+ 在美国1976年到1996年二十年的时间里，得分为9的组合年化收益率为 15.9%，而得分为0的组合年化收益率为-6.1%，二者相差23% 。而同期标普 500的回报率为11.1%。
+ 2008年，AAII(American Association of Individual Investors)跟踪的56 个选股策略中只有一个策略的收益率为正，那就是Piotroski的选股策略， 当年收益率为32.6%。而所有策略的回报率的中位数为-41.7%。
+ Joseph D. Piotroski 在Journal of Accounting Research 上发表了一篇文章” Value investing: The use of historical financial statement information to separate winners from losers”。他提出了9个财务指标 来对股票进行打分， 根据打分的高低将股票区分出来。他的这套打分方法称为 Piotroski scoring。
+ 该模型的九个指标是：
+ 扣除非经常性损益后的净利润 扣除非经常性损益后的净利润的增长 每股经营活动现金流量净额 每股经营活动现金流量净额与每股净利润的差值 长期负债比例的增长 流动性比率的增长 总股本的增长 销售毛利率的增长 总资产周转率的增长   可能改进 该模型对每个因子仅作0和1的区别，实际上可以给每个因子权重，然后用training data 给出优化的权重。因为在不同的市场上，投资者看中的指标可能并不一样。中国市场跟 美国市场可能会有很大区别。
+在稳定增长中寻找超额收益 策略说明  P = PE $\times$ EPS 可以推出 $\Delta$P = $\Delta$PE + $\Delta$EPS + $\Delta$PE $\times$ $\Delta$EPS</description>
+    </item>
+    
+    <item>
+      <title>读刘未鹏的《暗时间》第三篇</title>
+      <link>/2015/01/12/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%89%E7%AF%87/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/01/12/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%89%E7%AF%87/</guid>
+      <description> 跟波利亚学解题  时刻不忘未知量（即时刻别忘记你到底想要求什么，问题是什么。）莱布尼兹曾经将人的解题思考过程比喻成晃筛子，把脑袋里面的东西都给抖落出来，然后正在搜索的注意力会抓住一切细微的、与问题有关的东西。
+ Ask Google
+   数学界流传一个与此有关的笑话：如果你有一个未解决问题，你有两个办法，一，自己解决它。二，让陶哲轩对它感兴趣。
+《像外行一样思考，像专家一样实践》中所说的，人类的灵感一定是有规律的，认知科学目前至少已经确认了人类思维的整个物质基础——神经元。而既然它们是物质，自然要遵循物质的运行规律。
+普通人遵守规则，牛人无视规则，伟人创造规则。
+Think out of the box.
+ 平凡而又神奇的贝叶斯方法  概率论只不过是把常识用数学公式表达了出来。 &amp;ndash; 拉普拉斯
+ </description>
+    </item>
+    
+    <item>
+      <title>读刘未鹏的《暗时间》第二篇</title>
+      <link>/2015/01/11/test-post/</link>
+      <pubDate>Sun, 11 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/01/11/test-post/</guid>
+      <description>思维改变生活  Things you heard, you forget; things you experienced, you remember.   亲身经历一个负性事件带来的情绪记忆要比看着或听说别人遭受一个同样的事件所感受到的强烈得多，形成的负性条件反射也远远更持久。
+There is no 感同身受.
+A few lines of reasoning can change the way we see the world.
+ People underestimate how much they can endure the misery.
+Scientific research has indicated that, however severe pain you are suffering now, it will have little impact on how happy you are six months later. Therefore, never buy insurance.</description>
+    </item>
+    
+    <item>
+      <title>读刘未鹏的《暗时间》第一篇</title>
+      <link>/2015/01/10/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</link>
+      <pubDate>Sat, 10 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/01/10/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</guid>
+      <description>最近读刘未鹏的《暗时间》有些感触。刘未鹏在书中将人的大脑比作CPU，对时间安排，处理任务等进行了一些阐述。我总结了一下：
+How to use your time more efficiently  Time is one dimension, and intensity is the other&amp;ndash;The output is equal to Time X Intensity.   运行空闲进程也是一天，运行大数据量计算的程序也是一天，对于CPU来说同样的一天，价值却是完全不一样的。善于利用思维时间的人，可以无形中比别人多出很多时间
+  Stop multitasking.   任务切换需要耗费许多额外的花销，通俗地来讲，首先需要保存当前上下文以便下次能够顺利切换回来，然后要加载目标任务的上下文。如果一个系统不停地在多个任务之间来回倒腾，就会耗费大量的时间在上下文切换上，无形中浪费很多的时间。
+大脑开始一件任务的时候必须要有一定时间来“热身”，这个时间因人而异，并且可以通过练习来改变。
+ For example. you can concentrate on researh during the working days, and leave other unimportant stuffs to the weekend. By doing so, you can reduce the switching cost, thus improving the efficency of your time.</description>
+    </item>
+    
+    <item>
+      <title>《平凡的世界》读书笔记</title>
+      <link>/2014/12/30/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 30 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/12/30/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <description>“有文化的城里人，往往不能想象农村姑娘的爱情生活。在他们看来，也许没有文化就等于没有头脑；没有头脑就不懂得多少感情。可是实际也许和这种偏见恰恰相反。真的，正由于她们知识不多，精神不会太分散，对于两性之间的感情非常专注，所以这种感情实际上更丰富，更强烈。”
+“尤其象田润叶这样的人，她尽管在县城参加了工作，但本质上也可以说仍然是一个农村姑娘。一旦当她第一次对一个男人产生了热烈的爱情，就会深陷进去而不能自拔。可一旦这热烈的向往落空，又很难从因此而造成的痛苦中解脱出来。她除过日常的生活和工作，又没有远大的事业上的追求来弥补感情上的损失……”</description>
     </item>
     
     <item>
@@ -60,27 +236,16 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 #
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/1/01/01/</guid>
-      <description>读刘未鹏的《暗时间》第二篇 /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
+      <description>读刘未鹏的《暗时间》第一篇 /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
     </item>
     
     <item>
-      <title>6 Harsh Truth that will Make You a Better Person</title>
-      <link>/1/01/01/6-harsh-truth-that-will-make-you-a-better-person/</link>
+      <title></title>
+      <link>/1/01/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/6-harsh-truth-that-will-make-you-a-better-person/</guid>
-      <description>By David Wong
-The World Only Cares About What It Can Get from You By virtue of your birth &amp;ndash; the moment you came into the world, you became part of a system designed purely to see to people&amp;rsquo;s needs.
-Either you will go about the task of seeing to those needs by learning a unique set of skills, or the world will reject you, no matter how kind, giving, and polite you are.</description>
-    </item>
-    
-    <item>
-      <title>Code and Data for the Social Sciences</title>
-      <link>/1/01/01/code-and-data-for-the-social-sciences/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/code-and-data-for-the-social-sciences/</guid>
-      <description>Automate everything  Automate everything that can be automated. Write a single script that executes all code from beginning to end. 写一个terminal执行文件，可以执行不同软件的结果。 &amp;gt; let’s add another key script to the directory, called rundirectory.bat, which is a Windows shell script. Its contents look like this:  ---- rundirectory.bat ---- stattransfer export_to_csv.stc statase -b mergefiles.do statase -b cleandata.do statase -b regressions.do statase -b figures.do pdflatex tv_potato.tex  The rundirectory.bat script works like a roadmap.</description>
+      <guid>/1/01/01/</guid>
+      <description>量化交易策略总结 /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.trim(b)&amp;&amp;(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.</description>
     </item>
     
     <item>
@@ -98,202 +263,6 @@ Google Chart API，Google sheets for world map 在Google Video和Google Finance�
 Tableau Public（Business Intelligence and Analytics） 这是Tableau的免费版本。操作简单，出的成品很有美感。学生可以免费。
 R packages  library(ggplot2) library(leaflet) Leaflet是为移动端友好型交互地图所做的开源JavaScript库 github devtools::install_github(&amp;quot;chgrl/leafletR&amp;quot;) github  WolframAlpha WolframAlpha把自己称作计算型知识引擎、谷歌在分析领域的劲敌。它最棒的一点是在显示图表时可以不需要任何配置就响应数据请求。如果你用的是公开的数据，那么你只需一个简单的小部件生成器就能在你的网页上轻松加入可视化数据。
 flowingdata http://flowingdata.com/</description>
-    </item>
-    
-    <item>
-      <title>Linear Regression and group by in R</title>
-      <link>/1/01/01/linear-regression-and-group-by-in-r/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/linear-regression-and-group-by-in-r/</guid>
-      <description>Here&amp;rsquo;s one way using the lme4 package.
-&amp;gt; library(lme4) &amp;gt; d &amp;lt;- data.frame(state=rep(c(&#39;NY&#39;, &#39;CA&#39;), c(10, 10)), + year=rep(1:10, 2), + response=c(rnorm(10), rnorm(10))) &amp;gt; xyplot(response ~ year, groups=state, data=d, type=&#39;l&#39;) &amp;gt; fits &amp;lt;- lmList(response ~ year | state, data=d) &amp;gt; fits Call: lmList(formula = response ~ year | state, data = d) Coefficients: (Intercept) year CA -1.34420990 0.17139963 NY 0.00196176 -0.01852429 Degrees of freedom: 20 total; 16 residual Residual standard error: 0.</description>
-    </item>
-    
-    <item>
-      <title>OCR for English and Chinese</title>
-      <link>/1/01/01/ocr-for-english-and-chinese/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/ocr-for-english-and-chinese/</guid>
-      <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
-tesseract project in github
-Install ImageMagick for image conversion:
-brew install imagemagick  Install tesseract for OCR:
-brew install tesseract --with-all-languages  Or install without --all-languages and install them manually as needed.
-Make sure the input image is a grayscale .tif and fairly large. ~500x150 was too small, while ~2000*500 worked very well.
-convert input.png -resize 400% -type Grayscale input.tif  OCR it. The default language is English.</description>
-    </item>
-    
-    <item>
-      <title>People should learn in their 20s - Rich Tatum</title>
-      <link>/1/01/01/people-should-learn-in-their-20s---rich-tatum/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/people-should-learn-in-their-20s---rich-tatum/</guid>
-      <description>From Rich Tatum
- Most people are very focused on superficial problems and jump from one to another, as you yourself mostly do. Your problems are much smaller than you make them out to be. Meditation makes this abundantly clear, and everything else much easier. There&amp;rsquo;s a profound connection between your body&amp;rsquo;s well-being and your mental and emotional well-being. As you age you can&amp;rsquo;t fuck off with terrible exercise and eating habits like you did when you were young.</description>
-    </item>
-    
-    <item>
-      <title>R and Rstudio Tricks</title>
-      <link>/1/01/01/r-and-rstudio-tricks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/r-and-rstudio-tricks/</guid>
-      <description>Shortcut  Alt+- gives the assign operator &amp;lt;- Ctrl+Alt+Left/right arrow switches between open files Ctrl+Space gives autocomplete options Ctrl+Left/right arrow jumps one word Ctrl+shift+C to un-comment, simply re-highlight and hit Ctrl+shift+C again. The Tab key on your keyboard will help you (particularly in RStudio) by offering ways to finish your code. If you start typing mea and hit tab, it will suggest mean() among other things. If you type mean(~hwy, data=vehicles, and hit tab, it will tell you the other arguments you can use for the mean() function.</description>
-    </item>
-    
-    <item>
-      <title>Reproducible Research</title>
-      <link>/1/01/01/reproducible-research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/reproducible-research/</guid>
-      <description>Do not do things by hand
- remov outliers QA /QC validating editing tables and figures moving data around your computer down load data from a website  Do not use GUI (Point and Click)
- can not be repeated  Teach your computer to do the job
- even if you only do it once down load data from a website, unzip it   download.file(&amp;quot;http://-address- dataset.zip&amp;quot;, &amp;quot;project/dataset.zip&amp;quot;)   Do use some version control</description>
-    </item>
-    
-    <item>
-      <title>Several Public Data Sources</title>
-      <link>/1/01/01/several-public-data-sources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/several-public-data-sources/</guid>
-      <description>World Bank Data http://data.worldbank.org/
-Topics on :
-UNdata http://data.un.org/
- education fruit export poverty health indonesia web
- Population  Data USA https://www.data.gov/
-Data USA, an online application developed by a team of data scientists at MIT Media Lab and Datawheel, backed by Deloitte is helping Americans visualize demographic and economic data using an open source platform.
-中国国家统计局数据 http://data.stats.gov.cn/
-Quandl https://www.quandl.com/
-install.packages(&amp;quot;Quandl&amp;quot;) library(Quandl) data &amp;lt;- Quandl(&amp;quot;FRED/GDP&amp;quot;) head(data)  Topics on :</description>
-    </item>
-    
-    <item>
-      <title>Things to Stop Doing in 2015 From HBR</title>
-      <link>/1/01/01/things-to-stop-doing-in-2015-from-hbr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/things-to-stop-doing-in-2015-from-hbr/</guid>
-      <description>Stop multitasking (it can be done). Stop procrastinating, saving work for tomorrow, and waiting to be inspired to work. At the same time, stop working at an unsustainable pace. It makes leading more difficult, and to do things better, you have to stop doing so much. If that’s not possible, at least stop complaining about how busy you are. Everyone will thank you. Stop feeling like you have to be authentic all the time.</description>
-    </item>
-    
-    <item>
-      <title>Using MathJax on Github:Pages</title>
-      <link>/1/01/01/using-mathjax-on-githubpages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/using-mathjax-on-githubpages/</guid>
-      <description>Thanks A very useful post by Christopher Poole regarding how to use Latex in Github:Pages
-However, the font of th latex is smaller than my content. To solve this problem, I add the code below to the  part of the default.html in the _layouts filefolder. It works! I can choose the scale number to scale up or down.
-&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; MathJax.Hub.Config({ extensions: [&amp;quot;tex2jax.js&amp;quot;], &amp;quot;HTML-CSS&amp;quot;: { scale: 150} }); &amp;lt;/script&amp;gt;  Usage Here is an example MathJax inline rendering \( 1/x^{2} \), and here is a block rendering:</description>
-    </item>
-    
-    <item>
-      <title>《Sapiens: A Brief History of Humankind》读书笔记</title>
-      <link>/1/01/01/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>The state and the market approached people with an offer that could not be refused. &amp;lsquo;Become individuals,&amp;rsquo; they said. &amp;lsquo;Marry whomever you desire, without asking permission from your parents. Take up whatever job suits you, even if community elders frown. Live wherever you wish, even if you cannot make it every week to the family dinner. You are no longer dependent on your family or your community. We, the state and the market, will take care of you instead.</description>
-    </item>
-    
-    <item>
-      <title>《平凡的世界》读书笔记</title>
-      <link>/1/01/01/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>“有文化的城里人，往往不能想象农村姑娘的爱情生活。在他们看来，也许没有文化就等于没有头脑；没有头脑就不懂得多少感情。可是实际也许和这种偏见恰恰相反。真的，正由于她们知识不多，精神不会太分散，对于两性之间的感情非常专注，所以这种感情实际上更丰富，更强烈。”
-“尤其象田润叶这样的人，她尽管在县城参加了工作，但本质上也可以说仍然是一个农村姑娘。一旦当她第一次对一个男人产生了热烈的爱情，就会深陷进去而不能自拔。可一旦这热烈的向往落空，又很难从因此而造成的痛苦中解脱出来。她除过日常的生活和工作，又没有远大的事业上的追求来弥补感情上的损失……”</description>
-    </item>
-    
-    <item>
-      <title>如何正确的休息</title>
-      <link>/1/01/01/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E4%BC%91%E6%81%AF/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E4%BC%91%E6%81%AF/</guid>
-      <description> 脑力劳动者，补瞌睡对你没什么用  比如你星期五写了5个小时的企划案，最好第二天去给你的盆栽们剪枝而不是睡到太阳晒屁股。还有一点，当你无法选择由脑力劳动转入体力劳动时，你不妨在脑力劳动内部转换。
-法国杰出的启蒙思想家卢梭就讲过他的心得：“我本不是一个生来适于研究学问的人，因为我用功的时间稍长一些就感到疲倦，甚至我不能一连半小时集中精力于一个问题上。但是，我连续研究几个不同的问题，即使是不间断，我也能够轻松愉快地一个一个地寻思下去，这一个问题可以消除另一个问题所带来的疲劳，用不着休息一下脑筋。于是，我就在我的治学中充分利用我所发现的这一特点，对一些问题交替进行研究。这样，即使我整天用功也不觉得疲倦了。”所以，如果你有好几个问题要处理，最好交替进行，而不要处理完一个再开始第二个，那样会很快被耗尽。
- 最好的休息，是让你重燃生活的热情  我们的疲惫主要来自对现有的一成不变的生活的厌倦。所以最好的休息项目就是那些让我们重新找到生活和工作热情的活动。如果你干完一件事，能够幸福地感叹“明天又是新的一天。”那这件事对你来说就是最好的恢复热情，调节情绪的方法。
-以“做”来解决“累”，用积极休息取代消极放纵。
- 不必停下来，只是换一下  去健身房。 看小说、看演出，比如舞台剧等。 学一项新技能，滑雪，滑冰。 去社交。不要以为它总是令人疲惫的。虽然和看书比起来，它稍有点令人紧张，但也能让你更兴奋，更有认同感。 睡前三小时内不要吃东西，尤其忌油腻辛辣。 晚九点以后不要喝水将尿液排空，肾脏得到很好的休息，并防止半夜起来去洗手间打断睡眠。  </description>
-    </item>
-    
-    <item>
-      <title>用R进行数据格式转换(SAS, Stata)</title>
-      <link>/1/01/01/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</guid>
-      <description>​ 我们在进行合作研究的时候，经常面临的的一个问题就是，一个Co-author给的数据集是stata格式的(.dta), 而我们用的是SAS，或者相反，还有很多研究者习惯用SAS清洗数据，完成后用Stata 跑回归，在这些情况下我们都会面临一个数据格式转换的问题，那么今天我们就来谈一下如何用R来帮助格式转换。
- 为什么是R? 因为它是开源的，你可以在没有安装SAS和Stata的情况下完成.sas7bdat和.dta的转换
- 看到R有些人可能就要关闭文章了，因为不想又学一个软件，其实，我们完成数据转换不需要真正的搞懂R的code，只需要跟着我一步一步来就可以了，比把大象装冰箱还简单。
- 下载安装R 到R的官网下载安装对应平台的R程序。
- 安装需要的packages
-  # 类似于Stata的 ssc install install.packages(&#39;haven&#39;, repos = &#39;http://cran.us.r-project.org&#39;) # 表示我们要从R的官网安装一个包名字叫 haven  然后我们就可以用啦 ~
-SAS 转 Stata 把下面的code粘贴单R的console里面，等着
-library(haven) # 加载包 dataset &amp;lt;- read_sas(&amp;quot;C:/example.sas7bdat&amp;quot;) # 把SAS数据读进来 # 把它导出为14版本的stata数据 # version 可以是8 -14 的任何一个 # 你也可以借此完成不同的stata版本数据的转化 write_dta(dataset, &amp;quot;C:/example.dta&amp;quot;, version = 14)  Stata 转 SAS 把下面的code粘贴单R的console里面，等着
-library(haven) # 加载包 dataset &amp;lt;- read_dta(&amp;quot;C:/example.dta&amp;quot;) # 把Stata数据读进来 write_sas(dataset, &amp;quot;C:/example.</description>
-    </item>
-    
-    <item>
-      <title>读刘未鹏的《暗时间》第一篇</title>
-      <link>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</guid>
-      <description>最近读刘未鹏的《暗时间》有些感触。刘未鹏在书中将人的大脑比作CPU，对时间安排，处理任务等进行了一些阐述。我总结了一下：
-How to use your time more efficiently  Time is one dimension, and intensity is the other&amp;ndash;The output is equal to Time X Intensity.   运行空闲进程也是一天，运行大数据量计算的程序也是一天，对于CPU来说同样的一天，价值却是完全不一样的。善于利用思维时间的人，可以无形中比别人多出很多时间
-  Stop multitasking.   任务切换需要耗费许多额外的花销，通俗地来讲，首先需要保存当前上下文以便下次能够顺利切换回来，然后要加载目标任务的上下文。如果一个系统不停地在多个任务之间来回倒腾，就会耗费大量的时间在上下文切换上，无形中浪费很多的时间。
-大脑开始一件任务的时候必须要有一定时间来“热身”，这个时间因人而异，并且可以通过练习来改变。
- For example. you can concentrate on researh during the working days, and leave other unimportant stuffs to the weekend. By doing so, you can reduce the switching cost, thus improving the efficency of your time.</description>
-    </item>
-    
-    <item>
-      <title>读刘未鹏的《暗时间》第三篇</title>
-      <link>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%89%E7%AF%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4%E7%AC%AC%E4%B8%89%E7%AF%87/</guid>
-      <description> 跟波利亚学解题  时刻不忘未知量（即时刻别忘记你到底想要求什么，问题是什么。）莱布尼兹曾经将人的解题思考过程比喻成晃筛子，把脑袋里面的东西都给抖落出来，然后正在搜索的注意力会抓住一切细微的、与问题有关的东西。
- Ask Google
-   数学界流传一个与此有关的笑话：如果你有一个未解决问题，你有两个办法，一，自己解决它。二，让陶哲轩对它感兴趣。
-《像外行一样思考，像专家一样实践》中所说的，人类的灵感一定是有规律的，认知科学目前至少已经确认了人类思维的整个物质基础——神经元。而既然它们是物质，自然要遵循物质的运行规律。
-普通人遵守规则，牛人无视规则，伟人创造规则。
-Think out of the box.
- 平凡而又神奇的贝叶斯方法  概率论只不过是把常识用数学公式表达了出来。 &amp;ndash; 拉普拉斯
- </description>
-    </item>
-    
-    <item>
-      <title>转载：Your Presentation Needs a Punch Line [HBR]</title>
-      <link>/1/01/01/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</guid>
-      <description>By Annette Ferrara
-It was late Saturday night on Chicago’s North Side, and the historic Green Mill jazz club was buzzing with nervous energy. So was I. Pacing on the edge of the tiny stage, I gave my notes one final glance, exterminated the butterflies in my stomach, and stepped into the blinding spotlight. “Welcome to the inaugural edition of Mortified Chicago!” I shouted into the mic. “Tonight, real people will read their teenage diaries in front of you, total strangers.</description>
-    </item>
-    
-    <item>
-      <title>量化交易策略总结</title>
-      <link>/1/01/01/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93/</guid>
-      <description>Piotroski选股策略 策略说明  Piotroski选股策略是在P/B最低的20%的股票中按照9个财务指标打分，将这 些打分加起来得到每只股票的得分，分值为0-9之间的整数。
- 在美国1976年到1996年二十年的时间里，得分为9的组合年化收益率为 15.9%，而得分为0的组合年化收益率为-6.1%，二者相差23% 。而同期标普 500的回报率为11.1%。
- 2008年，AAII(American Association of Individual Investors)跟踪的56 个选股策略中只有一个策略的收益率为正，那就是Piotroski的选股策略， 当年收益率为32.6%。而所有策略的回报率的中位数为-41.7%。
- Joseph D. Piotroski 在Journal of Accounting Research 上发表了一篇文章” Value investing: The use of historical financial statement information to separate winners from losers”。他提出了9个财务指标 来对股票进行打分， 根据打分的高低将股票区分出来。他的这套打分方法称为 Piotroski scoring。
- 该模型的九个指标是：
- 扣除非经常性损益后的净利润 扣除非经常性损益后的净利润的增长 每股经营活动现金流量净额 每股经营活动现金流量净额与每股净利润的差值 长期负债比例的增长 流动性比率的增长 总股本的增长 销售毛利率的增长 总资产周转率的增长   可能改进 该模型对每个因子仅作0和1的区别，实际上可以给每个因子权重，然后用training data 给出优化的权重。因为在不同的市场上，投资者看中的指标可能并不一样。中国市场跟 美国市场可能会有很大区别。
-在稳定增长中寻找超额收益 策略说明  P = PE \( \times \) EPS 可以推出 \( \Delta \)P =\( \Delta \)PE + \( \Delta \)EPS + \( \Delta \)PE \( \times \) \( \Delta \)EPS</description>
     </item>
     
   </channel>

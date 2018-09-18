@@ -6,16 +6,17 @@
     <description>Recent content in Tesseract on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/tesseract/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OCR for English and Chinese</title>
-      <link>/1/01/01/ocr-for-english-and-chinese/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>/2018/07/16/ocr-for-english-and-chinese/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/1/01/01/ocr-for-english-and-chinese/</guid>
+      <guid>/2018/07/16/ocr-for-english-and-chinese/</guid>
       <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
 tesseract project in github
 Install ImageMagick for image conversion:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "用R进行数据格式转换(SAS, Stata)"
+date: 2017-11-22
 categories:
 - Programming
 - Research

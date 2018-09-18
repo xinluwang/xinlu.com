@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Data Visualization Tools"
+date: 2016-006-08
 categories:
 - Programming
 

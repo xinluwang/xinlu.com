@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "转载：Your Presentation Needs a Punch Line [HBR]"
+date: 2015-05-30
 categories:
 - 文摘
 tags: 

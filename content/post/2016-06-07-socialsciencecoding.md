@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Code and Data for the Social Sciences"
+date: 2016-06-07
 categories:
 - Research
 

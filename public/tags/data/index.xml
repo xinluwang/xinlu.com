@@ -6,9 +6,59 @@
     <description>Recent content in Data on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 16 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OCR for English and Chinese</title>
+      <link>/2018/07/16/ocr-for-english-and-chinese/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/07/16/ocr-for-english-and-chinese/</guid>
+      <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
+tesseract project in github
+Install ImageMagick for image conversion:
+brew install imagemagick  Install tesseract for OCR:
+brew install tesseract --with-all-languages  Or install without --all-languages and install them manually as needed.
+Make sure the input image is a grayscale .tif and fairly large. ~500x150 was too small, while ~2000*500 worked very well.
+convert input.png -resize 400% -type Grayscale input.tif  OCR it. The default language is English.</description>
+    </item>
+    
+    <item>
+      <title>用R进行数据格式转换(SAS, Stata)</title>
+      <link>/2017/11/22/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/22/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</guid>
+      <description>​ 我们在进行合作研究的时候，经常面临的的一个问题就是，一个Co-author给的数据集是stata格式的(.dta), 而我们用的是SAS，或者相反，还有很多研究者习惯用SAS清洗数据，完成后用Stata 跑回归，在这些情况下我们都会面临一个数据格式转换的问题，那么今天我们就来谈一下如何用R来帮助格式转换。
+ 为什么是R? 因为它是开源的，你可以在没有安装SAS和Stata的情况下完成.sas7bdat和.dta的转换
+ 看到R有些人可能就要关闭文章了，因为不想又学一个软件，其实，我们完成数据转换不需要真正的搞懂R的code，只需要跟着我一步一步来就可以了，比把大象装冰箱还简单。
+ 下载安装R 到R的官网下载安装对应平台的R程序。
+ 安装需要的packages
+  # 类似于Stata的 ssc install install.packages(&#39;haven&#39;, repos = &#39;http://cran.us.r-project.org&#39;) # 表示我们要从R的官网安装一个包名字叫 haven  然后我们就可以用啦 ~
+SAS 转 Stata 把下面的code粘贴单R的console里面，等着
+library(haven) # 加载包 dataset &amp;lt;- read_sas(&amp;quot;C:/example.sas7bdat&amp;quot;) # 把SAS数据读进来 # 把它导出为14版本的stata数据 # version 可以是8 -14 的任何一个 # 你也可以借此完成不同的stata版本数据的转化 write_dta(dataset, &amp;quot;C:/example.dta&amp;quot;, version = 14)  Stata 转 SAS 把下面的code粘贴单R的console里面，等着
+library(haven) # 加载包 dataset &amp;lt;- read_dta(&amp;quot;C:/example.dta&amp;quot;) # 把Stata数据读进来 write_sas(dataset, &amp;quot;C:/example.</description>
+    </item>
+    
+    <item>
+      <title>Several Public Data Sources</title>
+      <link>/2016/06/19/several-public-data-sources/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/19/several-public-data-sources/</guid>
+      <description>World Bank Data http://data.worldbank.org/
+Topics on :
+UNdata http://data.un.org/
+ education fruit export poverty health indonesia web
+ Population  Data USA https://www.data.gov/
+Data USA, an online application developed by a team of data scientists at MIT Media Lab and Datawheel, backed by Deloitte is helping Americans visualize demographic and economic data using an open source platform.
+中国国家统计局数据 http://data.stats.gov.cn/
+Quandl https://www.quandl.com/
+install.packages(&amp;quot;Quandl&amp;quot;) library(Quandl) data &amp;lt;- Quandl(&amp;quot;FRED/GDP&amp;quot;) head(data)  Topics on :</description>
+    </item>
     
     <item>
       <title>Data Visualization Tools</title>
@@ -25,55 +75,6 @@ Google Chart API，Google sheets for world map 在Google Video和Google Finance�
 Tableau Public（Business Intelligence and Analytics） 这是Tableau的免费版本。操作简单，出的成品很有美感。学生可以免费。
 R packages  library(ggplot2) library(leaflet) Leaflet是为移动端友好型交互地图所做的开源JavaScript库 github devtools::install_github(&amp;quot;chgrl/leafletR&amp;quot;) github  WolframAlpha WolframAlpha把自己称作计算型知识引擎、谷歌在分析领域的劲敌。它最棒的一点是在显示图表时可以不需要任何配置就响应数据请求。如果你用的是公开的数据，那么你只需一个简单的小部件生成器就能在你的网页上轻松加入可视化数据。
 flowingdata http://flowingdata.com/</description>
-    </item>
-    
-    <item>
-      <title>OCR for English and Chinese</title>
-      <link>/1/01/01/ocr-for-english-and-chinese/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/ocr-for-english-and-chinese/</guid>
-      <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
-tesseract project in github
-Install ImageMagick for image conversion:
-brew install imagemagick  Install tesseract for OCR:
-brew install tesseract --with-all-languages  Or install without --all-languages and install them manually as needed.
-Make sure the input image is a grayscale .tif and fairly large. ~500x150 was too small, while ~2000*500 worked very well.
-convert input.png -resize 400% -type Grayscale input.tif  OCR it. The default language is English.</description>
-    </item>
-    
-    <item>
-      <title>Several Public Data Sources</title>
-      <link>/1/01/01/several-public-data-sources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/several-public-data-sources/</guid>
-      <description>World Bank Data http://data.worldbank.org/
-Topics on :
-UNdata http://data.un.org/
- education fruit export poverty health indonesia web
- Population  Data USA https://www.data.gov/
-Data USA, an online application developed by a team of data scientists at MIT Media Lab and Datawheel, backed by Deloitte is helping Americans visualize demographic and economic data using an open source platform.
-中国国家统计局数据 http://data.stats.gov.cn/
-Quandl https://www.quandl.com/
-install.packages(&amp;quot;Quandl&amp;quot;) library(Quandl) data &amp;lt;- Quandl(&amp;quot;FRED/GDP&amp;quot;) head(data)  Topics on :</description>
-    </item>
-    
-    <item>
-      <title>用R进行数据格式转换(SAS, Stata)</title>
-      <link>/1/01/01/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</guid>
-      <description>​ 我们在进行合作研究的时候，经常面临的的一个问题就是，一个Co-author给的数据集是stata格式的(.dta), 而我们用的是SAS，或者相反，还有很多研究者习惯用SAS清洗数据，完成后用Stata 跑回归，在这些情况下我们都会面临一个数据格式转换的问题，那么今天我们就来谈一下如何用R来帮助格式转换。
- 为什么是R? 因为它是开源的，你可以在没有安装SAS和Stata的情况下完成.sas7bdat和.dta的转换
- 看到R有些人可能就要关闭文章了，因为不想又学一个软件，其实，我们完成数据转换不需要真正的搞懂R的code，只需要跟着我一步一步来就可以了，比把大象装冰箱还简单。
- 下载安装R 到R的官网下载安装对应平台的R程序。
- 安装需要的packages
-  # 类似于Stata的 ssc install install.packages(&#39;haven&#39;, repos = &#39;http://cran.us.r-project.org&#39;) # 表示我们要从R的官网安装一个包名字叫 haven  然后我们就可以用啦 ~
-SAS 转 Stata 把下面的code粘贴单R的console里面，等着
-library(haven) # 加载包 dataset &amp;lt;- read_sas(&amp;quot;C:/example.sas7bdat&amp;quot;) # 把SAS数据读进来 # 把它导出为14版本的stata数据 # version 可以是8 -14 的任何一个 # 你也可以借此完成不同的stata版本数据的转化 write_dta(dataset, &amp;quot;C:/example.dta&amp;quot;, version = 14)  Stata 转 SAS 把下面的code粘贴单R的console里面，等着
-library(haven) # 加载包 dataset &amp;lt;- read_dta(&amp;quot;C:/example.dta&amp;quot;) # 把Stata数据读进来 write_sas(dataset, &amp;quot;C:/example.</description>
     </item>
     
   </channel>

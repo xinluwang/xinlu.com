@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Reproducible Research"
+date: 2016-06-06
 categories:
 - Research
 ---

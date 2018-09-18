@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "OCR for English and Chinese"
+date: 2018-07-16
 categories:
 - Programming
 - Research

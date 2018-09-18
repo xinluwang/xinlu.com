@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Several Public Data Sources"
+date: 2016-06-19
 categories:
 - Programming
 - Research
@@ -104,8 +105,10 @@ Health-related data about countries in the world.
 
 www.who.int/research/en/
 
-Again, a variety of health-related datasets suchas mortality and life expectancy
-### OECD Statistics 
+Again, a variety of health-related datasets such
+as mortality and life expectancy
+
+### OECD Statistics 
 
 http://stats.oecd.org/
 

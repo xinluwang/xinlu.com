@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Linear Regression and group by in R"
+date: 2015-12-27
 categories:
 - Programming
 tags: 

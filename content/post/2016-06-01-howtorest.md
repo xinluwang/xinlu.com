@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "如何正确的休息"
+date: 2016-06-01
 categories:
 - 文摘
 tags:
