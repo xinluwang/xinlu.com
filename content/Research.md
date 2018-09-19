@@ -17,6 +17,6 @@ title: "Research Projects and Publications"
 
 ## 3. Current working projects
 
-1. sample link to pdf file. **[link](./summary-report-NOV04.pdf)**
+1. sample link to pdf file. **[link](/sharefiles/summary-report-NOV04.pdf)**
 
 2. 

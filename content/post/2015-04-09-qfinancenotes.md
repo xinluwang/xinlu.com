@@ -48,8 +48,6 @@ separate winners from losers”。他提出了9个财务指标 来对股票进�
 
 ### 策略说明
 
-<img src="/post/2015-04-09-qfinancenotes_files/Snip20180918_1.png" alt="" width="60%"/>
-
 
 - 由 `$P = PE \times EPS $` 可以推导出  `$$ P = PE \times EPS $$` 
 

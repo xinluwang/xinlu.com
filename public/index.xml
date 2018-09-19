@@ -44,16 +44,6 @@ library(haven) # 加载包 dataset &amp;lt;- read_dta(&amp;quot;C:/example.dta&a
     </item>
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
       <title>Several Public Data Sources</title>
       <link>/2016/06/19/several-public-data-sources/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
@@ -151,17 +141,6 @@ flowingdata http://flowingdata.com/</description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 ## Median :15.0 Median : 36 ## Mean :15.4 Mean : 43 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
       <title>《Sapiens: A Brief History of Humankind》读书笔记</title>
       <link>/2015/07/02/sapiens-a-brief-history-of-humankind%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 02 Jul 2015 00:00:00 +0000</pubDate>
@@ -171,11 +150,11 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2 ## 1st Qu.:12.0 1st Qu.: 26 #
     </item>
     
     <item>
-      <title>转载：Your Presentation Needs a Punch Line [HBR]</title>
-      <link>/2015/05/30/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</link>
+      <title>Your Presentation Needs a Punch Line [HBR]</title>
+      <link>/2015/05/30/your-presentation-needs-a-punch-line-hbr/</link>
       <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/05/30/%E8%BD%AC%E8%BD%BDyour-presentation-needs-a-punch-line-hbr/</guid>
+      <guid>/2015/05/30/your-presentation-needs-a-punch-line-hbr/</guid>
       <description>By Annette Ferrara
 It was late Saturday night on Chicago’s North Side, and the historic Green Mill jazz club was buzzing with nervous energy. So was I. Pacing on the edge of the tiny stage, I gave my notes one final glance, exterminated the butterflies in my stomach, and stepped into the blinding spotlight. “Welcome to the inaugural edition of Mortified Chicago!” I shouted into the mic. “Tonight, real people will read their teenage diaries in front of you, total strangers.</description>
     </item>
@@ -192,8 +171,7 @@ It was late Saturday night on Chicago’s North Side, and the historic Green Mil
  Joseph D. Piotroski 在Journal of Accounting Research 上发表了一篇文章” Value investing: The use of historical financial statement information to separate winners from losers”。他提出了9个财务指标 来对股票进行打分， 根据打分的高低将股票区分出来。他的这套打分方法称为 Piotroski scoring。
  该模型的九个指标是：
  扣除非经常性损益后的净利润 扣除非经常性损益后的净利润的增长 每股经营活动现金流量净额 每股经营活动现金流量净额与每股净利润的差值 长期负债比例的增长 流动性比率的增长 总股本的增长 销售毛利率的增长 总资产周转率的增长   可能改进 该模型对每个因子仅作0和1的区别，实际上可以给每个因子权重，然后用training data 给出优化的权重。因为在不同的市场上，投资者看中的指标可能并不一样。中国市场跟 美国市场可能会有很大区别。
-在稳定增长中寻找超额收益 策略说明  分别考虑“金融”公司和“非金融”公司
- 考虑的指标：</description>
+在稳定增长中寻找超额收益 策略说明  由 $P = PE \times EPS $ 可以推导出 $$ P = PE \times EPS $$</description>
     </item>
     
     <item>
