@@ -90,27 +90,11 @@ within(leadership,
  )
 ```
 
-### *dplyr* inequality Join
+### inequality Join 
 
 
 
 ```r
-FundsWithReturns <- left_join(FundMonths, Returns, 
-                                FundID == FundID, 
-                                yearmonth > gmonth +3, 
-                                yearmonth <= gmonth + 15)
-
-FundsWithReturns <- left_join(FundMonths, Returns, 
-                                "FundID", 
-                                yearmonth > gmonth +3, 
-                                yearmonth <= gmonth + 15) 
-
-FundsWithReturns <- left_join(FundMonths, Returns, 
-                    by=c("FundID”, 
-                         "yearmonth > gmonth +3",
-                         "yearmonth <= gmonth + 15")
-                        )
-
 FundsWithReturns <- sqldf('select d1.*, d2.ReturnRf
                         from FundMonths d1 
                         left join Returns d2
