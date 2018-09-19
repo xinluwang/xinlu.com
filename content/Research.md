@@ -8,6 +8,7 @@ title: "Research Projects and Publications"
 
 ## 2. Journal Articles
 
+
 1. 
 
 > abstract: 
@@ -16,6 +17,6 @@ title: "Research Projects and Publications"
 
 ## 3. Current working projects
 
-1. 
+1. sample link to pdf file. [link](./summary-report-NOV04.pdf)
 
 2. 

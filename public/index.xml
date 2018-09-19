@@ -225,8 +225,8 @@ How to use your time more efficiently  Time is one dimension, and intensity is t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I am an Associate Professor specialized in corporate accounting and finance.
-I love to play with data using R and Python.
+      <description>I am an Associate Professor specialized in Research on corporate accounting and finance.
+I love to manipulate and visualize data using R and Python.
 I believe in open source.
 Email: xinlu.wang@outlook.com</description>
     </item>
@@ -238,7 +238,8 @@ Email: xinlu.wang@outlook.com</description>
       
       <guid>/research/</guid>
       <description> 1. Data  sample data  2. Journal Articles     abstract:
- 3. Current working projects     </description>
+ 3. Current working projects  sample link to pdf file. link
+   </description>
     </item>
     
     <item>
