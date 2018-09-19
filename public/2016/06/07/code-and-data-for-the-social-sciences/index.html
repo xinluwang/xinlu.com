@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Code and Data for the Social Sciences - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Code and Data for the Social Sciences - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="---- rundirectory.bat ---- stattransfer export_to_csv.stc statase -b mergefiles.do statase -b cleandata.do statase -b regressions.do statase -b figures.do pdflatex tv_potato.tex  The rundirectory.bat &amp;hellip;">
+      <meta property="og:description" content="---- rundirectory.bat ---- stattransfer export_to_csv.stc statase -b mergefiles.do statase -b cleandata.do statase -b regressions.do statase -b figures.do pdflatex tv_potato.tex  The rundirectory.bat &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="2016">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Code and Data for the Social Sciences</h1>
+
+<h3>
+  2016-06-07</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<h3 id="automate-everything">Automate everything</h3>
+
+<ul>
+<li>Automate everything that can be automated.</li>
+<li>Write a single script that executes all code from beginning to end.</li>
+<li>写一个terminal执行文件，可以执行不同软件的结果。
+&gt; let’s add another key script to the directory, called <code>rundirectory.bat</code>, which is a Windows shell script. Its contents look like this:</li>
+</ul>
+
+<pre><code>---- rundirectory.bat ----
+stattransfer export_to_csv.stc
+statase -b mergefiles.do
+statase -b cleandata.do
+statase -b regressions.do
+statase -b figures.do
+pdflatex tv_potato.tex
+</code></pre>
+
+<p>The <code>rundirectory.bat</code> script works like a roadmap.</p>
+
+<h3 id="version-control">Version control</h3>
+
+<ul>
+<li>Store code and data under version control.</li>
+<li>Run the whole directory before checking it back in.</li>
+</ul>
+
+<h3 id="directory">Directory</h3>
+
+<ul>
+<li>Separate directories by function.</li>
+<li>Separate files into inputs and outputs.</li>
+<li>Make directories portable.</li>
+</ul>
+
+<p>project路径区分 input 和 output，还要按照功能区分路径。</p>
+
+<ul>
+<li>Generally four file folders for one project:
+
+<ul>
+<li><code>/input</code> 原始数据保持<code>.csv</code> 格式<br /></li>
+<li><code>/code</code></li>
+<li><code>/output</code>中间步骤数据为<code>.feather</code>格式</li>
+<li><code>/temp</code></li>
+</ul></li>
+</ul>
+
+<h3 id="documentation">Documentation</h3>
+
+<ul>
+<li>Don’t write documentation you will not maintain.</li>
+<li>Code should be self-documenting.</li>
+</ul>
+
+<h3 id="team-management">Team management</h3>
+
+<p>Try not to use Email. Use one task management for team work.</p>
+
+<h3 id="code-style">Code style</h3>
+
+<ul>
+<li>Keep it short and purposeful</li>
+<li>Make your functions shy</li>
+<li>Order your functions for linear reading.</li>
+<li>Us descriptive names</li>
+<li>Separate slow code from fast code.</li>
+<li>Store more output from slow code.</li>
+</ul>
+
+<h3 id="convert-sas7bdat-to-csv">Convert <code>sas7bdat</code> to <code>csv</code></h3>
+
+<p><code>sas7bdat_to_csv</code> is a python command, to convert <code>.sas7bdat</code> file into <code>.csv</code> format.</p>
+
+<pre><code>cd /Volumes/database/conferencepre/DailyVolumeData/ 
+sas7bdat_to_csv Volume_2004.sas7bdat volume2004.csv
+</code></pre>
+
+<h3 id="lyx">Lyx</h3>
+
+<pre><code>\input{untitled.txt} 
+</code></pre>
+
+<h3 id="generate-dummy-variables">Generate dummy variables</h3>
+
+<pre><code class="language-r">dummies = table(1:length(year),as.factor(year)) 
+A &lt;- model.matrix(y ~ x + catVar,binom) 
+head(A)
+
+## in regression, use + factor(year)
+####################################
+
+year = c(1995, 1996)
+dummy = as.numeric(year &gt;= 1995)
+
+</code></pre>
+
+<h3 id="import-other-files-into-bibtex">Import other files into Bibtex</h3>
+
+<ol>
+<li>zotero to endnote to bidtex
+
+<ul>
+<li>如果直接用zotero导入bides，它会产生自己的citekey跟bides的规则不一样，通过导入endnote会把cite key丢失，然后再用temporary cite key 打开，这样cite key产生的贵的就一样了， <code>Author-year-aa</code><br /></li>
+</ul></li>
+<li>then use bibdesk to open it with <strong>&ldquo;Open Using temporary cite keys…&rdquo;</strong></li>
+</ol>
+
+<h4 id="alternatively-method">Alternatively method:</h4>
+
+<p>This method can avoid generating duplicated cite keys.</p>
+
+<ol>
+<li>In Endnote, <code>Edit</code> -&gt; <code>output styles</code> -&gt; <code>Bibtex Export</code>.</li>
+<li>Select items you intend to copy in Endnote, then, <code>Edit</code> -&gt; <code>Copy Formatted</code>.</li>
+<li>Paste into a Bibdesk window</li>
+</ol>
+
+
+  <footer>
+  
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

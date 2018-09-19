@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>R and Rstudio Tricks - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="R and Rstudio Tricks - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="x &amp;lt;- seq(0,10, 0.1) foreach(i = 1:101) %do% { lp[i] &amp;lt;- x[i]^i }  combine and split dataframe from and into small chunks foo &amp;lt;- list() foo[[1]] &amp;lt;- data.frame(a=1:5, b=11:15) foo[[2]] &amp;lt;- &amp;hellip;">
+      <meta property="og:description" content="x &amp;lt;- seq(0,10, 0.1) foreach(i = 1:101) %do% { lp[i] &amp;lt;- x[i]^i }  combine and split dataframe from and into small chunks foo &amp;lt;- list() foo[[1]] &amp;lt;- data.frame(a=1:5, b=11:15) foo[[2]] &amp;lt;- &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="2016">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>R and Rstudio Tricks</h1>
+
+<h3>
+  2016-06-09</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<h3 id="shortcut">Shortcut</h3>
+
+<ul>
+<li><code>Alt</code>+<code>-</code> gives the assign operator <code>&lt;-</code></li>
+<li><code>Ctrl</code>+<code>Alt</code>+<code>Left/right arrow</code> switches between open files</li>
+<li><code>Ctrl</code>+<code>Space</code> gives autocomplete options</li>
+<li><code>Ctrl</code>+<code>Left/right arrow</code> jumps one word</li>
+<li><code>Ctrl</code>+<code>shift</code>+<code>C</code> to un-comment, simply re-highlight and hit <code>Ctrl</code>+<code>shift</code>+<code>C</code> again.</li>
+<li>The <code>Tab</code> key on your keyboard will help you (particularly in RStudio) by offering ways to finish your code. If you start typing mea and hit tab, it will suggest mean() among other things. If you type mean(~hwy, data=vehicles, and hit tab, it will tell you the other arguments you can use for the mean() function.</li>
+</ul>
+
+<h3 id="useful-build-in-function">Useful build-in function</h3>
+
+<ul>
+<li><code>str()</code></li>
+<li><code>head()</code> and <code>tail()</code></li>
+<li><code>summary()</code></li>
+<li><code>table()</code></li>
+</ul>
+
+<h3 id="use-back-ticks-to-reference-non-standard-names">Use back ticks to reference non standard names</h3>
+
+<ul>
+<li><code>df$`1`</code></li>
+<li><code>lm(`2`~`1`,data=df)</code></li>
+</ul>
+
+<h3 id="use-library-foreach">Use <code>library(foreach)</code></h3>
+
+<pre><code class="language-r">x &lt;- seq(0,10, 0.1)
+
+foreach(i = 1:101) %do% {
+    lp[i] &lt;- x[i]^i
+    }
+</code></pre>
+
+<h3 id="combine-and-split-dataframe-from-and-into-small-chunks">combine and split <em>dataframe</em> from and into small chunks</h3>
+
+<pre><code class="language-r">foo &lt;- list()
+foo[[1]] &lt;- data.frame(a=1:5, b=11:15)
+foo[[2]] &lt;- data.frame(a=101:105, b=111:115)
+foo[[3]] &lt;- data.frame(a=200:210, b=300:310)
+food &lt;- do.call(rbind, foo)
+row.names(food) &lt;- as.character(seq(1, nrow(food), 1))
+
+## split 
+foo &lt;- split(food, (as.numeric(row.names(food))-1) %/% 100)
+##  every 100 observations as one chunks 
+</code></pre>
+
+<h3 id="instead-of-using-dplyr">Instead of using <em>dplyr</em></h3>
+
+<ul>
+<li><code>ifelse()</code></li>
+<li><code>df$column2[df$column1 == x] &lt;- y</code></li>
+<li><code>transform(sales, euro = revenue * usd2eur)</code></li>
+<li><code>subset(sales, product %in% c(1, 2), select =c('name'))</code></li>
+</ul>
+
+<h3 id="using-with-and-within">using <em>with()</em> and <em>within()</em></h3>
+
+<pre><code class="language-r">with(mtcars, summary(mpg))
+with(mtcars, summary(mpg, disp, wt))
+
+with(mtcars, {
+nokeepstats &lt;- summary(mpg)
+keepstats &lt;&lt;- summary(mpg)
+}
+)
+</code></pre>
+
+<blockquote>
+<p>The <code>within()</code> function is similar to the <code>with()</code> function , but allows you to modify the data frame.</p>
+</blockquote>
+
+<pre><code class="language-r">leadership &lt;- 
+within(leadership, 
+{agecat &lt;- NA
+ agecat[age &gt; 75] &lt;- &quot;Elder&quot;
+ agecat[age &gt;= 55 &amp; age &lt;= 75] &lt;- &quot;Middle Aged&quot;
+ agecat[age &lt; 55] &lt;- &quot;Young&quot;
+ }
+ )
+</code></pre>
+
+<h3 id="inequality-join">inequality Join</h3>
+
+<pre><code class="language-r">FundsWithReturns &lt;- sqldf('select d1.*, d2.ReturnRf
+                        from FundMonths d1 
+                        left join Returns d2
+                        on d1.FundID = d2.FundID
+                        and d1.yearmonth - 3 &gt; d2.gmonth
+                        and d1.yearmonth - 15 &lt;= d2.gmonth')
+</code></pre>
+
+<h3 id="用完之后及时的remove-temp-items">用完之后及时的remove temp items</h3>
+
+<pre><code class="language-r">rm(object1, object2)
+</code></pre>
+
+<h3 id="做好标注-注释在rstudio">做好标注,注释在Rstudio</h3>
+
+<pre><code class="language-r"># 20160430 #### 
+</code></pre>
+
+<p>前面一个#后面四个#### 就可以在备注里面显示出来模块并直接索引到该段程序。统一注释的风格。</p>
+
+
+  <footer>
+  
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

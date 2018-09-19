@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Several Public Data Sources - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Several Public Data Sources - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="http://data.worldbank.org/
+Topics on :
+[&amp;hellip;] http://data.un.org/
+[&amp;hellip;] https://www.data.gov/
+Data USA, an online application developed by a team of data scientists at MIT Media Lab and &amp;hellip;">
+      <meta property="og:description" content="http://data.worldbank.org/
+Topics on :
+[&amp;hellip;] http://data.un.org/
+[&amp;hellip;] https://www.data.gov/
+Data USA, an online application developed by a team of data scientists at MIT Media Lab and &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="2016">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Several Public Data Sources</h1>
+
+<h3>
+  2016-06-19</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<h3 id="world-bank-data">World Bank Data</h3>
+
+<p><a href="http://data.worldbank.org/">http://data.worldbank.org/</a></p>
+
+<p><strong>Topics on</strong> :</p>
+
+<p><img src="/assets/worldbankdata.png" alt="" /></p>
+
+<h3 id="undata">UNdata</h3>
+
+<p><a href="http://data.un.org/">http://data.un.org/</a></p>
+
+<ul>
+<li>education</li>
+<li>fruit</li>
+<li>export</li>
+<li>poverty</li>
+<li>health</li>
+<li>indonesia</li>
+<li>web<br /></li>
+<li>Population</li>
+</ul>
+
+<h3 id="data-usa">Data USA</h3>
+
+<p><a href="https://www.data.gov/">https://www.data.gov/</a></p>
+
+<p>Data USA, an online application developed by a team of data scientists at MIT Media Lab and Datawheel, backed by Deloitte is helping Americans visualize demographic and economic data using an open source platform.</p>
+
+<h3 id="中国国家统计局数据">中国国家统计局数据</h3>
+
+<p><a href="http://data.stats.gov.cn/">http://data.stats.gov.cn/</a></p>
+
+<h3 id="quandl">Quandl</h3>
+
+<p><a href="https://www.quandl.com/">https://www.quandl.com/</a></p>
+
+<pre><code class="language-r">install.packages(&quot;Quandl&quot;)
+library(Quandl)
+data &lt;- Quandl(&quot;FRED/GDP&quot;)
+head(data)
+</code></pre>
+
+<p><strong>Topics on</strong> :</p>
+
+<p><img src="/assets/quandldata.png" alt="" /></p>
+
+<h3 id="european-statistics">European statistics</h3>
+
+<p><a href="http://ec.europa.eu/eurostat/data/database">http://ec.europa.eu/eurostat/data/database</a></p>
+
+<p><strong>Topics on</strong> :</p>
+
+<p><img src="/assets/eurostatdata.png" alt="" /></p>
+
+<h3 id="ropensci-packages">rOpenSci packages</h3>
+
+<p>This is a complete list of all available rOpenSci packages. Packages are grouped by ones that acquire data, full-text of journal articles, altmetrics, data-publication, focus on scalable and reproducibile computing, data visualization, or geospatial work.</p>
+
+<p><a href="https://ropensci.org/packages/">https://ropensci.org/packages/</a></p>
+
+<h3 id="data-sources-on-the-web-by-mran">Data Sources on the Web by MRAN</h3>
+
+<ul>
+<li>Economics</li>
+<li>Finance</li>
+<li>Government</li>
+<li>Health Care</li>
+<li>Machine Learning</li>
+<li>Networks</li>
+<li>Public Domain Collections</li>
+<li>Science</li>
+<li>Social Sciences</li>
+</ul>
+
+<p><a href="https://mran.revolutionanalytics.com/documents/data/">https://mran.revolutionanalytics.com/documents/data/</a></p>
+
+<h3 id="datahub">datahub</h3>
+
+<p>CKAN is a tool for managing and publishing collections of data. It is used by national and local governments, research institutions, and other organizations which collect a lot of data. With its powerful search and faceting, users can browse and find the data they need, and preview it using maps, graphs and tables - whether they are developers, journalists, researchers, NGOs, citizens or your own colleagues.</p>
+
+<p><a href="https://datahub.io/dataset">https://datahub.io/dataset</a></p>
+
+<h3 id="rafael-laporta-data">Rafael Laporta data</h3>
+
+<p><a href="http://faculty.tuck.dartmouth.edu/rafael-laporta/research-publications">http://faculty.tuck.dartmouth.edu/rafael-laporta/research-publications</a></p>
+
+<h3 id="global-health-facts">Global Health Facts</h3>
+
+<p>www.globalhealthfacts.org/</p>
+
+<p>Health-related data about countries in the world.</p>
+
+<h3 id="world-health-organization">World Health Organization</h3>
+
+<p>www.who.int/research/en/</p>
+
+<p>Again, a variety of health-related datasets such
+as mortality and life expectancy</p>
+
+<h3 id="oecd-statistics">OECD Statistics</h3>
+
+<p><a href="http://stats.oecd.org/">http://stats.oecd.org/</a></p>
+
+<p>Major source for economic indicators</p>
+
+<h3 id="explore-the-languages-of-the-world">Explore The Languages Of The World</h3>
+
+<p><a href="https://www.ethnologue.com/">https://www.ethnologue.com/</a></p>
+
+<p>Ethnologue: Languages of the World is a comprehensive reference work cataloging all of the world’s known living languages. Since 1951, the Ethnologue has been an active research project involving hundreds of linguists and other researchers around the world. It is widely regarded to be the most comprehensive source of information of its kind.</p>
+
+
+  <footer>
+  
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
