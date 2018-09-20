@@ -13,10 +13,10 @@
     
     <item>
       <title>Code and Data for the Social Sciences</title>
-      <link>/2016/06/07/code-and-data-for-the-social-sciences/</link>
+      <link>/20160607/code-and-data-for-the-social-sciences/</link>
       <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/06/07/code-and-data-for-the-social-sciences/</guid>
+      <guid>/20160607/code-and-data-for-the-social-sciences/</guid>
       <description>Automate everything  Automate everything that can be automated. Write a single script that executes all code from beginning to end. 写一个terminal执行文件，可以执行不同软件的结果。 &amp;gt; let’s add another key script to the directory, called rundirectory.bat, which is a Windows shell script. Its contents look like this:  ---- rundirectory.bat ---- stattransfer export_to_csv.stc statase -b mergefiles.do statase -b cleandata.do statase -b regressions.do statase -b figures.do pdflatex tv_potato.tex  The rundirectory.bat script works like a roadmap.</description>
     </item>
     
