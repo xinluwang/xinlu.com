@@ -13,10 +13,10 @@
     
     <item>
       <title>OCR for English and Chinese</title>
-      <link>/2018/07/16/ocr-for-english-and-chinese/</link>
+      <link>/20180716/ocr-for-english-and-chinese/</link>
       <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/07/16/ocr-for-english-and-chinese/</guid>
+      <guid>/20180716/ocr-for-english-and-chinese/</guid>
       <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
 tesseract project in github
 Install ImageMagick for image conversion:
@@ -28,10 +28,10 @@ convert input.png -resize 400% -type Grayscale input.tif  OCR it. The default la
     
     <item>
       <title>用R进行数据格式转换(SAS, Stata)</title>
-      <link>/2017/11/22/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</link>
+      <link>/20171122/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/11/22/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</guid>
+      <guid>/20171122/%E7%94%A8r%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2sas-stata/</guid>
       <description>​ 我们在进行合作研究的时候，经常面临的的一个问题就是，一个Co-author给的数据集是stata格式的(.dta), 而我们用的是SAS，或者相反，还有很多研究者习惯用SAS清洗数据，完成后用Stata 跑回归，在这些情况下我们都会面临一个数据格式转换的问题，那么今天我们就来谈一下如何用R来帮助格式转换。
  为什么是R? 因为它是开源的，你可以在没有安装SAS和Stata的情况下完成.sas7bdat和.dta的转换
  看到R有些人可能就要关闭文章了，因为不想又学一个软件，其实，我们完成数据转换不需要真正的搞懂R的code，只需要跟着我一步一步来就可以了，比把大象装冰箱还简单。
@@ -45,10 +45,10 @@ library(haven) # 加载包 dataset &amp;lt;- read_dta(&amp;quot;C:/example.dta&a
     
     <item>
       <title>Several Public Data Sources</title>
-      <link>/2016/06/19/several-public-data-sources/</link>
+      <link>/20160619/several-public-data-sources/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/06/19/several-public-data-sources/</guid>
+      <guid>/20160619/several-public-data-sources/</guid>
       <description>World Bank Data http://data.worldbank.org/
 Topics on :
 UNdata http://data.un.org/
@@ -62,19 +62,19 @@ install.packages(&amp;quot;Quandl&amp;quot;) library(Quandl) data &amp;lt;- Quan
     
     <item>
       <title>R and Rstudio Tricks</title>
-      <link>/2016/06/09/r-and-rstudio-tricks/</link>
+      <link>/20160609/r-and-rstudio-tricks/</link>
       <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/06/09/r-and-rstudio-tricks/</guid>
+      <guid>/20160609/r-and-rstudio-tricks/</guid>
       <description>Shortcut  Alt+- gives the assign operator &amp;lt;- Ctrl+Alt+Left/right arrow switches between open files Ctrl+Space gives autocomplete options Ctrl+Left/right arrow jumps one word Ctrl+shift+C to un-comment, simply re-highlight and hit Ctrl+shift+C again. The Tab key on your keyboard will help you (particularly in RStudio) by offering ways to finish your code. If you start typing mea and hit tab, it will suggest mean() among other things. If you type mean(~hwy, data=vehicles, and hit tab, it will tell you the other arguments you can use for the mean() function.</description>
     </item>
     
     <item>
       <title>Linear Regression and group by in R</title>
-      <link>/2015/12/27/linear-regression-and-group-by-in-r/</link>
+      <link>/20151227/linear-regression-and-group-by-in-r/</link>
       <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/27/linear-regression-and-group-by-in-r/</guid>
+      <guid>/20151227/linear-regression-and-group-by-in-r/</guid>
       <description>Here&amp;rsquo;s one way using the lme4 package.
 &amp;gt; library(lme4) &amp;gt; d &amp;lt;- data.frame(state=rep(c(&#39;NY&#39;, &#39;CA&#39;), c(10, 10)), + year=rep(1:10, 2), + response=c(rnorm(10), rnorm(10))) &amp;gt; xyplot(response ~ year, groups=state, data=d, type=&#39;l&#39;) &amp;gt; fits &amp;lt;- lmList(response ~ year | state, data=d) &amp;gt; fits Call: lmList(formula = response ~ year | state, data = d) Coefficients: (Intercept) year CA -1.34420990 0.17139963 NY 0.00196176 -0.01852429 Degrees of freedom: 20 total; 16 residual Residual standard error: 0.</description>
     </item>

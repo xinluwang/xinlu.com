@@ -13,10 +13,10 @@
     
     <item>
       <title>OCR for English and Chinese</title>
-      <link>/2018/07/16/ocr-for-english-and-chinese/</link>
+      <link>/20180716/ocr-for-english-and-chinese/</link>
       <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/07/16/ocr-for-english-and-chinese/</guid>
+      <guid>/20180716/ocr-for-english-and-chinese/</guid>
       <description>Version tesseract-3.04.01_2 and imagemagick-6.9.5-2
 tesseract project in github
 Install ImageMagick for image conversion:

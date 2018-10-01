@@ -13,10 +13,10 @@
     
     <item>
       <title>读刘未鹏的《暗时间》</title>
-      <link>/2015/01/12/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4/</link>
+      <link>/20150112/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4/</link>
       <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/01/12/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4/</guid>
+      <guid>/20150112/%E8%AF%BB%E5%88%98%E6%9C%AA%E9%B9%8F%E7%9A%84%E6%9A%97%E6%97%B6%E9%97%B4/</guid>
       <description>最近读刘未鹏的《暗时间》有些感触。刘未鹏在书中将人的大脑比作CPU，对时间安排，处理任务等进行了一些阐述。我总结了一下：
 How to use your time more efficiently  Time is one dimension, and intensity is the other&amp;ndash;The output is equal to Time X Intensity.   运行空闲进程也是一天，运行大数据量计算的程序也是一天，对于CPU来说同样的一天，价值却是完全不一样的。善于利用思维时间的人，可以无形中比别人多出很多时间
   Stop multitasking.   任务切换需要耗费许多额外的花销，通俗地来讲，首先需要保存当前上下文以便下次能够顺利切换回来，然后要加载目标任务的上下文。如果一个系统不停地在多个任务之间来回倒腾，就会耗费大量的时间在上下文切换上，无形中浪费很多的时间。

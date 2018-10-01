@@ -13,10 +13,10 @@
     
     <item>
       <title>R and Rstudio Tricks</title>
-      <link>/2016/06/09/r-and-rstudio-tricks/</link>
+      <link>/20160609/r-and-rstudio-tricks/</link>
       <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/06/09/r-and-rstudio-tricks/</guid>
+      <guid>/20160609/r-and-rstudio-tricks/</guid>
       <description>Shortcut  Alt+- gives the assign operator &amp;lt;- Ctrl+Alt+Left/right arrow switches between open files Ctrl+Space gives autocomplete options Ctrl+Left/right arrow jumps one word Ctrl+shift+C to un-comment, simply re-highlight and hit Ctrl+shift+C again. The Tab key on your keyboard will help you (particularly in RStudio) by offering ways to finish your code. If you start typing mea and hit tab, it will suggest mean() among other things. If you type mean(~hwy, data=vehicles, and hit tab, it will tell you the other arguments you can use for the mean() function.</description>
     </item>
     
