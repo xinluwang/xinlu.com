@@ -2,11 +2,14 @@
 title: "About Me"
 ---
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 *In God we trust, all others bring data.*
 
-`$\qquad  \qquad \qquad$` -- William Edwards Deming (1900-1993)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-- William Edwards Deming (1900-1993)
 
-`$$\\ \\ $$`
+<br>
+
 I am **Xinlu (Sean) Wang** , an Associate Professor specialized in Research on corporate accounting and finance, currently working at SWUFE.              
 I love to manipulate and visualize data using R and Python.      
 I believe in open source.       
