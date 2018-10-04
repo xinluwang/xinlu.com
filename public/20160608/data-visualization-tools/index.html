@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Data Visualization Tools - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Data Visualization Tools - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="来自知乎问题有哪些值得推荐的数据可视化工具？的总结
+[&amp;hellip;] Python的word cloud模块，结合jibe分词模块可以实现分词并生成词云。
+遮罩用于定义词云的形状。
+[&amp;hellip;] 谷歌扫描的三千万册书进行分词并做词频统计，沿着整个历史时间轴来研究语言在历史中的变迁。 在Ngrams中，分别输入首字母大写的“Science, Philosophy, Religion”，和 &amp;hellip;">
+      <meta property="og:description" content="来自知乎问题有哪些值得推荐的数据可视化工具？的总结
+[&amp;hellip;] Python的word cloud模块，结合jibe分词模块可以实现分词并生成词云。
+遮罩用于定义词云的形状。
+[&amp;hellip;] 谷歌扫描的三千万册书进行分词并做词频统计，沿着整个历史时间轴来研究语言在历史中的变迁。 在Ngrams中，分别输入首字母大写的“Science, Philosophy, Religion”，和 &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20160608">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Data Visualization Tools</h1>
+
+<h3>
+  2016-06-08</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<p>来自知乎问题<a href="https://www.zhihu.com/question/19929609">有哪些值得推荐的数据可视化工具？</a>的总结</p>
+
+<h3 id="tagxedo-http-www-tagxedo-com-的在线词云生成工具"><a href="http://www.tagxedo.com">Tagxedo</a> 的在线词云生成工具</h3>
+
+<p>Python的<code>word cloud</code>模块，结合<code>jibe</code>分词模块可以实现分词并生成词云。</p>
+
+<p><strong>遮罩</strong>用于定义词云的形状。</p>
+
+<h3 id="google-books-ngrams">Google Books Ngrams</h3>
+
+<p>谷歌扫描的三千万册书进行分词并做词频统计，沿着整个历史时间轴来研究语言在历史中的变迁。
+在Ngrams中，分别输入首字母大写的“Science, Philosophy, Religion”，和小写的“science, philosophy, religion”，我们得到如下两张图。在大写的图中（下图一），可以清楚看到在公元1600到1800年间，宗教是压倒性强势，然后是哲学，相比之下，科学还是没影的事。但1850年是转折点，科学慢慢占据优势，比宗教和哲学加起来都大。</p>
+
+<h3 id="百度-echarts-http-echarts-baidu-com">百度<a href="http://echarts.baidu.com/">Echarts</a></h3>
+
+<p>动态类型切换：
+大规模散点图：（感觉这个超级酷炫的！好像还有专利的）</p>
+
+<h3 id="google-chart-api-google-sheets-for-world-map">Google Chart API，Google sheets for world map</h3>
+
+<p>在Google Video和Google Finance中使用了它，后来觉得，如果能开放它让其他用户也使用的话，会是件不错的事情。
+Google Chart API工具从简单的折线图到复杂的分级树形图，他的图表库里提供了海量的模版可供选择。但Google Chart有个大问题：图表在客户端生成，这意味着那些不支持JavaScript的设备将无法使用。</p>
+
+<h3 id="tableau-public-https-public-tableau-com-s-download-business-intelligence-and-analytics"><a href="https://public.tableau.com/s/download">Tableau Public</a>（Business Intelligence and Analytics）</h3>
+
+<p>这是Tableau的免费版本。操作简单，出的成品很有美感。学生可以免费。</p>
+
+<h3 id="r-packages">R packages</h3>
+
+<ul>
+<li><code>library(ggplot2)</code></li>
+<li><code>library(leaflet)</code> Leaflet是为移动端友好型交互地图所做的开源JavaScript库 <a href="https://github.com/rstudio/leaflet">github</a></li>
+<li><code>devtools::install_github(&quot;chgrl/leafletR&quot;)</code> <a href="https://github.com/chgrl/leafletR">github</a></li>
+</ul>
+
+<h3 id="wolframalpha-http-www-wolframalpha-com"><a href="http://www.wolframalpha.com/">WolframAlpha</a></h3>
+
+<p>WolframAlpha把自己称作计算型知识引擎、谷歌在分析领域的劲敌。它最棒的一点是在显示图表时可以不需要任何配置就响应数据请求。如果你用的是公开的数据，那么你只需一个简单的小部件生成器就能在你的网页上轻松加入可视化数据。</p>
+
+<h3 id="flowingdata">flowingdata</h3>
+
+<p><a href="http://flowingdata.com/">http://flowingdata.com/</a></p>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

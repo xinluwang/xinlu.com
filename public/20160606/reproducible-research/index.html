@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Reproducible Research - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Reproducible Research - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Do not do things by hand
+[&amp;hellip;] Do not use GUI (Point and Click)
+[&amp;hellip;] Teach your computer to do the job
+[&amp;hellip;] download.file(&amp;quot;http://-address- dataset.zip&amp;quot;, &amp;hellip;">
+      <meta property="og:description" content="Do not do things by hand
+[&amp;hellip;] Do not use GUI (Point and Click)
+[&amp;hellip;] Teach your computer to do the job
+[&amp;hellip;] download.file(&amp;quot;http://-address- dataset.zip&amp;quot;, &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20160606">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Reproducible Research</h1>
+
+<h3>
+  2016-06-06</h3>
+<hr>
+
+
+      </header>
+
+
+
+<ul>
+<li><p>Do not do things by hand</p>
+
+<ul>
+<li>remov outliers</li>
+<li>QA /QC</li>
+<li>validating</li>
+<li>editing tables and figures</li>
+<li>moving data around your computer</li>
+<li>down load data from a website</li>
+</ul></li>
+
+<li><p>Do not use GUI (Point and Click)</p>
+
+<ul>
+<li>can not be repeated</li>
+</ul></li>
+
+<li><p>Teach your computer to do the job</p>
+
+<ul>
+<li>even if you only do it once</li>
+<li>down load data from a website, unzip it</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-r">download.file(&quot;http://-address- dataset.zip&quot;, 
+              &quot;project/dataset.zip&quot;) 
+</code></pre>
+
+<ul>
+<li><p>Do use some version control</p>
+
+<ul>
+<li>slow things down</li>
+<li>add changes in small chunks (don&rsquo;t just do one massive commit)</li>
+<li>track and snapshot, revert to the old version</li>
+<li>software like Github</li>
+</ul></li>
+
+<li><p>Do not save output</p>
+
+<ul>
+<li>avoid saving data analysis output (tables, figures, summaries, processed data, etc.)</li>
+<li>save the data + code that generated the outputs</li>
+</ul></li>
+
+<li><p>Do set your seed</p>
+
+<ul>
+<li><code>set.seed()</code> and to specify the random number generator to use</li>
+</ul></li>
+
+<li><p>Do think about the entire pipeline</p>
+
+<ul>
+<li>raw data -&gt; processed data -&gt; analysis -&gt; report</li>
+</ul></li>
+</ul>
+
+<p>Have we taught a computer to do as much as possible?
+Are we using a version control system?</p>
+
+<ul>
+<li><p>Long scripts should be factored
+into smaller functions</p></li>
+
+<li><p>csv是唯一交流的数据文件</p></li>
+
+<li><p>数据必须在1G以下</p>
+
+<ul>
+<li>拆分大的数据集</li>
+<li>原始数据保持<code>.csv</code> 格式，中间步骤数据为<code>.feather</code>格式
+<br /></li>
+</ul></li>
+
+<li><p>平台的转换时非常费事的，拆分数据，减少数据集，优化过程所需的时间会更少</p></li>
+
+<li><p>R里面的dataframe 单独存放为Rdata文件。</p></li>
+</ul>
+
+
+  <footer>
+  
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

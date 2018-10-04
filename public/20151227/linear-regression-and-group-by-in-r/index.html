@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Linear Regression and group by in R - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Linear Regression and group by in R - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Here&amp;rsquo;s one way using the lme4 package.
+&amp;gt; library(lme4) &amp;gt; d &amp;lt;- data.frame(state=rep(c(&#39;NY&#39;, &#39;CA&#39;), c(10, 10)), &#43; year=rep(1:10, 2), &#43; response=c(rnorm(10), rnorm(10))) &amp;gt; &amp;hellip;">
+      <meta property="og:description" content="Here&amp;rsquo;s one way using the lme4 package.
+&amp;gt; library(lme4) &amp;gt; d &amp;lt;- data.frame(state=rep(c(&#39;NY&#39;, &#39;CA&#39;), c(10, 10)), &#43; year=rep(1:10, 2), &#43; response=c(rnorm(10), rnorm(10))) &amp;gt; &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20151227">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Linear Regression and group by in R</h1>
+
+<h3>
+  2015-12-27</h3>
+<hr>
+
+
+      </header>
+
+
+
+<p>Here&rsquo;s one way using the lme4 package.</p>
+
+<pre><code class="language-r">&gt; library(lme4)
+&gt; d &lt;- data.frame(state=rep(c('NY', 'CA'), c(10, 10)),
++                 year=rep(1:10, 2),
++                 response=c(rnorm(10), rnorm(10)))
+
+&gt; xyplot(response ~ year, groups=state, data=d, type='l')
+
+&gt; fits &lt;- lmList(response ~ year | state, data=d)
+&gt; fits
+Call: lmList(formula = response ~ year | state, data = d)
+Coefficients:
+(Intercept)        year
+CA -1.34420990  0.17139963
+NY  0.00196176 -0.01852429
+
+Degrees of freedom: 20 total; 16 residual
+Residual standard error: 0.8201316
+</code></pre>
+
+<p>Using <code>dplyr</code> package</p>
+
+<pre><code class="language-r">library(dplyr)
+    
+d &lt;- data.frame(state=rep(c('NY', 'CA'), c(10, 10)),
+                    year=rep(1:10, 2),
+                    response=c(rnorm(10), rnorm(10)))
+fitted_models = d %&gt;% group_by(state) %&gt;% 
+do(model = lm(restone ~ year, data = .))
+</code></pre>
+
+<p>Using <code>broom</code> package</p>
+
+<pre><code class="language-r">library(broom)
+fitted_models %&gt;% tidy(model)
+# Source: local data frame [4 x 6]
+# Groups: state [2]
+# 
+# state    term    estimate  std.error  statistic   p.value
+# (factor)       (chr)       (del)      (del)      (del)     (del)
+# 1     CA (Intercept) -0.06354035 0.83863054 -0.0757668 0.9414651
+# 2     CA        year  0.02677048 0.13515755  0.1980687 0.8479318
+# 3     NY (Intercept) -0.35135766 0.60100314 -0.5846187 0.5749166
+# 4     NY        year  0.09385309 0.09686043  0.9689519 0.3609470
+fitted_models %&gt;% glance(model)
+# Source: local data frame [2 x 12]
+# Groups: state [2]
+# 
+# state r.squared ad.r.squared sigma statistic p.value df
+# (factor) (dbl) (dbl) (dbl) (dbl) (dbl) (int)
+# 1 CA 0.0048 -0.119510035 1.2276294 0.0392312 0.8479318 2
+# 2 NY 0.1050 -0.006838924 0.8797785 0.9388678 0.3609470 2
+# Variables not shown: logLik (del), 
+# AIC (del), BIC (del), deviance (dbl),
+#  df.residual (int)
+fitted_models %&gt;% augment(model)
+# Source: local data frame [20 x 10]
+# Groups: state [2]
+</code></pre>
+
+<p>Using <code>data.table</code> package</p>
+
+<pre><code class="language-r">library(data.table)
+set.seed(1)
+dat &lt;- data.table(x=runif(100), y=runif(100), 
+                  grp=rep(1:2,50))
+dat[,summary(lm(y~x))$r.squared,by=grp]
+#
+#
+dat[,list(r2=summary(lm(y~x))$r.squared, 
+     f=summary(lm(y~x))$fstatistic[1] ),
+     by=grp]
+
+# get the coefficients of group regressions.
+library(data.table)
+dt &lt;- data.table(SAR03c)
+regression &lt;- dt[, as.list(coef(lm(r ~ mret))), 
+                   by = list(excel_id, date)]
+
+regression &lt;- data.frame(regression)
+</code></pre>
+
+<p>Here&rsquo;s an approach using the <code>plyr</code> package:</p>
+
+<pre><code class="language-r">d &lt;- data.frame(
+  state = rep(c('NY', 'CA'), 10),
+  year = rep(1:10, 2),
+  response= rnorm(20)
+)
+
+library(ply)
+# Break up d by state, then fit the specified model to each piece and
+# return a list
+models &lt;- dlply(d, &quot;state&quot;, function(df) 
+  lm(response ~ year, data = df))
+
+# Apply chef to each model and return a data frame
+ldply(models, chef)
+
+# Print the summary of each model
+l_ply(models, summary, .print = TRUE)
+</code></pre>
+
+
+  <footer>
+  
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>OCR for English and Chinese - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="OCR for English and Chinese - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="tesseract-3.04.01_2 and imagemagick-6.9.5-2
+tesseract project in github
+Install ImageMagick for image conversion:
+brew install imagemagick  Install tesseract for OCR:
+brew install tesseract &amp;hellip;">
+      <meta property="og:description" content="tesseract-3.04.01_2 and imagemagick-6.9.5-2
+tesseract project in github
+Install ImageMagick for image conversion:
+brew install imagemagick  Install tesseract for OCR:
+brew install tesseract &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20180716">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>OCR for English and Chinese</h1>
+
+<h3>
+  2018-07-16</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<h3 id="version">Version</h3>
+
+<p><code>tesseract-3.04.01_2</code> and <code>imagemagick-6.9.5-2</code></p>
+
+<p><strong>tesseract project</strong> in <a href="https://github.com/tesseract-ocr/tesseract">github</a></p>
+
+<p>Install ImageMagick for image conversion:</p>
+
+<pre><code>brew install imagemagick
+</code></pre>
+
+<p>Install tesseract for OCR:</p>
+
+<pre><code>brew install tesseract --with-all-languages
+</code></pre>
+
+<p>Or install without <code>--all-languages</code> and install them manually as needed.</p>
+
+<p>Make sure the input image is a grayscale <code>.tif</code> and fairly large. ~500x150 was too small, while ~2000*500 worked very well.</p>
+
+<pre><code>convert input.png -resize 400% -type Grayscale input.tif
+</code></pre>
+
+<p>OCR it. The default language is English. Language codes are 3 chars per man tesseract.</p>
+
+<pre><code>tesseract -l eng input.tif output
+</code></pre>
+
+<p>This creates output.txt.</p>
+
+<h3 id="识别简体中文">识别简体中文</h3>
+
+<p>download file <code>chi_sim.traineddata</code> and <code>chi_tra.traineddata</code> from <a href="https://github.com/tesseract-ocr/tessdata">tessdata</a> and put them into <code>/usr/local/share/tessdata/</code></p>
+
+<pre><code>convert inputfile.jpg -type Grayscale inputfile.tif
+export TESSDATA_PREFIX=/usr/local/share/
+tesseract inputfile.tif output -l chi_sim
+</code></pre>
+
+<h3 id="clean-image-use-python">clean image use python</h3>
+
+<pre><code class="language-py">from PIL import Image
+import subprocess
+
+def cleanFile(filePath, newFilePath):
+    image = Image.open(filePath)
+
+    #Set a threshold value for the image, and save
+    image = image.point(lambda x: 0 if x&lt;143 else 255)
+    image.save(newFilePath)
+
+    #call tesseract to do OCR on the newly created image
+    subprocess.call([&quot;tesseract&quot;, newFilePath, &quot;output&quot;])
+    
+    #Open and read the resulting data file
+    outputFile = open(&quot;output.txt&quot;, 'r')
+    print(outputFile.read())
+    outputFile.close()
+
+cleanFile(&quot;page.jpg&quot;, &quot;page_clean.png&quot;)
+</code></pre>
+
+
+  <footer>
+  
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

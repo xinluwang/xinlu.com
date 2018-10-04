@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>量化交易策略总结 - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="量化交易策略总结 - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Piotroski选股策略是在P/B最低的20%的股票中按照9个财务指标打分，将这 些打分加起来得到每只股票的得分，分值为0-9之间的整数。
+[&amp;hellip;] 在美国1976年到1996年二十年的时间里，得分为9的组合年化收益率为 15.9%，而得分为0的组合年化收益率为-6.1%，二者相差23% 。而同期标普 500的回报率为11.1%。
+[&amp;hellip;] 2008 &amp;hellip;">
+      <meta property="og:description" content="Piotroski选股策略是在P/B最低的20%的股票中按照9个财务指标打分，将这 些打分加起来得到每只股票的得分，分值为0-9之间的整数。
+[&amp;hellip;] 在美国1976年到1996年二十年的时间里，得分为9的组合年化收益率为 15.9%，而得分为0的组合年化收益率为-6.1%，二者相差23% 。而同期标普 500的回报率为11.1%。
+[&amp;hellip;] 2008 &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20150409">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>量化交易策略总结</h1>
+
+<h3>
+  2015-04-09</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<h2 id="piotroski选股策略">Piotroski选股策略</h2>
+
+<h3 id="策略说明">策略说明</h3>
+
+<ul>
+<li><p>Piotroski选股策略是在P/B最低的20%的股票中按照9个财务指标打分，将这
+些打分加起来得到每只股票的得分，分值为0-9之间的整数。</p></li>
+
+<li><p>在美国1976年到1996年二十年的时间里，得分为9的组合年化收益率为
+15.9%，而得分为0的组合年化收益率为-6.1%，二者相差23% 。而同期标普
+500的回报率为11.1%。</p></li>
+
+<li><p>2008年，AAII(American Association of Individual Investors)跟踪的56
+个选股策略中只有一个策略的收益率为正，那就是Piotroski的选股策略，
+当年收益率为32.6%。而所有策略的回报率的中位数为-41.7%。</p></li>
+
+<li><p>Joseph D. Piotroski 在Journal of Accounting Research 上发表了一篇文章”
+Value investing: The use of historical financial statement information to
+separate winners from losers”。他提出了9个财务指标 来对股票进行打分，
+根据打分的高低将股票区分出来。他的这套打分方法称为 Piotroski scoring。</p></li>
+
+<li><p>该模型的九个指标是：</p>
+
+<ul>
+<li>扣除非经常性损益后的净利润</li>
+<li>扣除非经常性损益后的净利润的增长</li>
+<li>每股经营活动现金流量净额</li>
+<li>每股经营活动现金流量净额与每股净利润的差值</li>
+<li>长期负债比例的增长</li>
+<li>流动性比率的增长</li>
+<li>总股本的增长</li>
+<li>销售毛利率的增长</li>
+<li>总资产周转率的增长</li>
+</ul></li>
+</ul>
+
+<h3 id="可能改进">可能改进</h3>
+
+<p>该模型对每个因子仅作0和1的区别，实际上可以给每个因子权重，然后用training data
+给出优化的权重。因为在不同的市场上，投资者看中的指标可能并不一样。中国市场跟
+美国市场可能会有很大区别。</p>
+
+<h2 id="在稳定增长中寻找超额收益">在稳定增长中寻找超额收益</h2>
+
+<h3 id="策略说明-1">策略说明</h3>
+
+<ul>
+<li><p>由 <code>$P = PE \times EPS $</code> 可以推导出  <code>$$ P = PE \times EPS $$</code></p></li>
+
+<li><p>分别考虑“金融”公司和“非金融”公司</p></li>
+
+<li><p>考虑的指标：</p>
+
+<ul>
+<li>调整的净资产报酬率=利润总额/净资产</li>
+<li>资产报酬率=利润总额/总资产</li>
+<li>三费占比=（销售费用＋管理费用＋财务费用）/主营业务收入</li>
+<li>资产周转率=2×主营业务收入/（期初总资产+期末总资产）</li>
+<li>应收账款周转率=2×主营业务收入/（期初应收账款+期末应收账款）</li>
+<li>存货周转率=2×主营业务收入/（期初存货+期末存货）</li>
+<li>资产现金率=（现金+短期投资）/总资产</li>
+<li>收入现金率=销售商品提供劳务收到的现金/主营业务收入</li>
+<li>应收账款占比=应收账款/主营业务收入</li>
+<li>应付账款占比=应付账款/主营业务收入
+<br /></li>
+</ul></li>
+
+<li><p>反转指标：乖离率</p></li>
+</ul>
+
+<p>如果一类经营业绩比较好的公司在一段时间没有被投资者关注，一段时间会持续下跌跑
+输市场，但如果公司经营没有问题，后续反转的可能性比较大，建模时用 183 个自然日
+（即6 个月）乖离率（BIAS）表示反转</p>
+
+<h2 id="审视因子选股的逻辑">审视因子选股的逻辑</h2>
+
+<h3 id="因子选股步骤">因子选股步骤</h3>
+
+<ul>
+<li><p>样本过滤（用银子过滤符合策略风格的样本空间）、策略构建、组合构建、建仓调仓、
+业绩归因、模型修正。</p></li>
+
+<li><p>量价因子</p>
+
+<ul>
+<li>估值类</li>
+<li>成交类</li>
+<li>股价类</li>
+</ul></li>
+
+<li><p>历史财务因子</p>
+
+<ul>
+<li>盈利类</li>
+<li>成长类</li>
+<li>盈利惯性类</li>
+</ul></li>
+
+<li><p>预期因子</p>
+
+<ul>
+<li>sentiment？
+<br /></li>
+</ul></li>
+</ul>
+
+<h2 id="分红对期指的影响">分红对期指的影响</h2>
+
+<h3 id="模型">模型</h3>
+
+<ul>
+<li>目前分红已经完成近90%，已完成的分红对指数的影响约为2.36%（51
+约点），剩余分红对指数的影响大约7.7个点</li>
+</ul>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
