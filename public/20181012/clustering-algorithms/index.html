@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Clustering Algorithms - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Clustering Algorithms - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Given a set of data points, group them into a clusters so that:
+1. points within each cluster are similar to each other
+2. points from different clusters are dissimilar
+Usually, points are in a &amp;hellip;">
+      <meta property="og:description" content="Given a set of data points, group them into a clusters so that:
+1. points within each cluster are similar to each other
+2. points from different clusters are dissimilar
+Usually, points are in a &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20181012">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Clustering Algorithms</h1>
+
+<h3>xinlu wanag
+  /  2018-10-12</h3>
+<hr>
+
+
+      </header>
+
+
+
+<div id="problem-statements" class="section level2">
+<h2>Problem Statements</h2>
+<blockquote>
+<p>Given a set of data points, group them into a clusters so that:<br />
+    1. points within each cluster are similar to each other<br />
+    2. points from different clusters are dissimilar<br />
+Usually, points are in a high-dimensional space, and similarity is defined using a distance measure, such as Euclidean, Cosine, Jaccard, edit distance, …</p>
+</blockquote>
+</div>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<ol style="list-style-type: decimal">
+<li>Cluster customers based on their purchase histories</li>
+<li>Cluster products based on the sets of customers who purchased them</li>
+<li>Cluster documents based on similar words or shingles</li>
+<li>Cluster DNA sequences based on edit distance</li>
+</ol>
+</div>
+<div id="methods" class="section level2">
+<h2>Methods</h2>
+<ul>
+<li>Hierarchical (AgglomeraHve):
+<ol style="list-style-type: decimal">
+<li>Initially, each point in cluster by itself.</li>
+<li>Repeatedly combine the two “nearest” clusters into one.</li>
+</ol></li>
+<li>Point Assignment:
+<ol style="list-style-type: decimal">
+<li>Maintain a set of clusters.</li>
+<li>Place points into their “nearest” cluster.</li>
+</ol></li>
+</ul>
+</div>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

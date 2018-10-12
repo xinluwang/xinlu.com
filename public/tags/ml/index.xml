@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ml on Xinlu&#39;s Homepage</title>
+    <link>/tags/ml/</link>
+    <description>Recent content in Ml on Xinlu&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clustering Algorithms</title>
+      <link>/20181012/clustering-algorithms/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/20181012/clustering-algorithms/</guid>
+      <description>Problem StatementsGiven a set of data points, group them into a clusters so that:
+1. points within each cluster are similar to each other
+2. points from different clusters are dissimilar
+Usually, points are in a high-dimensional space, and similarity is defined using a distance measure, such as Euclidean, Cosine, Jaccard, edit distance, …
+ExamplesCluster customers based on their purchase historiesCluster products based on the sets of customers who purchased themCluster documents based on similar words or shinglesCluster DNA sequences based on edit distanceMethodsHierarchical (AgglomeraHve):Initially, each point in cluster by itself.</description>
+    </item>
+    
+  </channel>
+</rss>
