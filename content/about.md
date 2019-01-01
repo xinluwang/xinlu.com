@@ -2,6 +2,8 @@
 title: "About Me"
 ---
 
+<center> <img src="/./about_files/panda1.jpg" alt="" width="90%"/>  </center>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 *In God we trust, all others bring data.*
 
