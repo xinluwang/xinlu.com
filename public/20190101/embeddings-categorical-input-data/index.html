@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Embeddings: Categorical Input Data - Xinlu&#39;s Homepage</title>
+    <meta property="og:title" content="Embeddings: Categorical Input Data - Xinlu&#39;s Homepage">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Category data can be represented by fixed effect, all called sparse tensors. However this kind of representations will results in much higher dimmensions of input, and are less meaningful. It can &amp;hellip;">
+      <meta property="og:description" content="Category data can be represented by fixed effect, all called sparse tensors. However this kind of representations will results in much higher dimmensions of input, and are less meaningful. It can &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  
+  <body class="20190101">
+    <header class="masthead">
+      <h1><a href="/">Xinlu&#39;s Homepage</a></h1>
+
+<p class="tagline">A personal website for Research, Teaching, and Data Analysis</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/research/">Research</a></li>
+  
+  <li><a href="/teaching/">Teaching</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Embeddings: Categorical Input Data</h1>
+
+<h3>
+  2019-01-01</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+
+<p>Category data can be represented by fixed effect, all called <strong>sparse tensors</strong>. However this kind of representations will results in much higher dimmensions of input, and are less meaningful. It can memorize the training data without providing prediction powers for the out of sample data. When traning the neural network, This representation needs: 1) huge amount of data, and 2) huge amount of computation.</p>
+
+<p>Therefore, we need <em>embedding</em>: using a much lower dimension vector to represent Category data. This process will increase the power of the model. In the same time, we can compute the similarity of different categories. Those embeddings can be utilized in other models as well.</p>
+
+<h3 id="1-the-words-in-real-estate-ad-to-predict-house-price">1. the words in real estate ad to predict house price</h3>
+
+<p><img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162726.png" alt="post ads for house price" width="90%"/></p>
+
+<h3 id="2-classification-of-hand-drawing">2. classification of hand drawing</h3>
+
+<p><img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162553.png" alt="handdrawing classifications " width="95%"/></p>
+
+<h3 id="3-movie-recommendations">3. movie recommendations</h3>
+
+<p><img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162648.png" alt="" /></p>
+
+<h2 id="the-thumb-up-of-choosing-dimmensions">the thumb up of choosing dimmensions</h2>
+
+<blockquote>
+<p><img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162108@2x.png" alt="" width="90%"/></p>
+</blockquote>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
