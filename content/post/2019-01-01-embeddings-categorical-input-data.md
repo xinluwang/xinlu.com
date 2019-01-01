@@ -24,6 +24,6 @@ Therefore, we need *embedding*: using a much lower dimension vector to represent
 ### 3. movie recommendations 
 ![](/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162648.png)
 
-## Thumb of rule for choosing dimensions
+## Rule of Thumb for Choosing Dimensions
 
 <img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162108@2x.png" alt="" width="120%"/>
