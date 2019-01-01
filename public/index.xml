@@ -17,7 +17,7 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/20190101/embeddings-categorical-input-data/</guid>
-      <description>Category data can be represented by fixed effect, all called sparse tensors. However this kind of representations will results in much higher dimmensions of input, and are less meaningful. It can memorize the training data without providing prediction powers for the out of sample data. When traning the neural network, This representation needs: 1) huge amount of data, and 2) huge amount of computation.
+      <description>Category data can be represented by fixed effect, all called sparse tensors. However this kind of representations will results in much higher dimensions of input, and are less meaningful. It can memorize the training data without providing prediction powers for the out of sample data. When training the neural network, This representation needs: 1) huge amount of data, and 2) huge amount of computation.
 Therefore, we need embedding: using a much lower dimension vector to represent Category data.</description>
     </item>
     
