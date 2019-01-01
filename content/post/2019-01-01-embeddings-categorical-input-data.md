@@ -26,4 +26,4 @@ Therefore, we need *embedding*: using a much lower dimension vector to represent
 
 ## the thumb up of choosing dimensions
 
-> <img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162108@2x.png" alt="" width="90%"/>
+> <img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162108@2x.png" alt="" width="120%"/>
