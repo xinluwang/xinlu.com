@@ -45,6 +45,32 @@ Usually, points are in a high-dimensional space, and similarity is defined using
     </item>
     
     <item>
+      <title>Clustering Algorithms</title>
+      <link>/20181012/clustering-algorithms/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/20181012/clustering-algorithms/</guid>
+      <description>Problem Statements  Given a set of data points, group them into a clusters so that:
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 1. points within each cluster are similar to each other
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 2. points from different clusters are dissimilar
+Usually, points are in a high-dimensional space, and similarity is defined using a distance measure, such as Euclidean, Cosine, Jaccard, edit distance, &amp;hellip;
+ Examples  Cluster customers based on their purchase histories Cluster products based on the sets of customers who purchased them Cluster documents based on similar words or shingles Cluster DNA sequences based on edit distance  Methods  Hierarchical (AgglomeraHve):  Initially, each point in cluster by itself.</description>
+    </item>
+    
+    <item>
+      <title>Clustering Algorithms</title>
+      <link>/20181012/clustering-algorithms/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/20181012/clustering-algorithms/</guid>
+      <description>Problem Statements  Given a set of data points, group them into a clusters so that:
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 1. points within each cluster are similar to each other
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 2. points from different clusters are dissimilar
+Usually, points are in a high-dimensional space, and similarity is defined using a distance measure, such as Euclidean, Cosine, Jaccard, edit distance, &amp;hellip;
+ Examples  Cluster customers based on their purchase histories Cluster products based on the sets of customers who purchased them Cluster documents based on similar words or shingles Cluster DNA sequences based on edit distance  Methods  Hierarchical (AgglomeraHve):  Initially, each point in cluster by itself.</description>
+    </item>
+    
+    <item>
       <title>Revolutionary Road 观后感</title>
       <link>/20181001/revolutionary-road/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>

@@ -45,13 +45,11 @@
     
       
       <meta property="description" content="Given a set of data points, group them into a clusters so that:
-1. points within each cluster are similar to each other
-2. points from different clusters are dissimilar
-Usually, points are in a &amp;hellip;">
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 1. points within each cluster are similar to each other
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 2. points from different clusters are &amp;hellip;">
       <meta property="og:description" content="Given a set of data points, group them into a clusters so that:
-1. points within each cluster are similar to each other
-2. points from different clusters are dissimilar
-Usually, points are in a &amp;hellip;">
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 1. points within each cluster are similar to each other
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 2. points from different clusters are &amp;hellip;">
       
     
 
@@ -113,40 +111,41 @@ Usually, points are in a &amp;hellip;">
 
 
 
+<h2 id="problem-statements">Problem Statements</h2>
 
-<div id="problem-statements" class="section level2">
-<h2>Problem Statements</h2>
 <blockquote>
 <p>Given a set of data points, group them into a clusters so that:<br />
-    1. points within each cluster are similar to each other<br />
-    2. points from different clusters are dissimilar<br />
-Usually, points are in a high-dimensional space, and similarity is defined using a distance measure, such as Euclidean, Cosine, Jaccard, edit distance, …</p>
+&nbsp;&nbsp;&nbsp; 1. points within each cluster are similar to each other<br />
+&nbsp;&nbsp;&nbsp; 2. points from different clusters are dissimilar<br />
+Usually, points are in a high-dimensional space, and similarity is defined using a distance measure, such as Euclidean, Cosine, Jaccard, edit distance, &hellip;</p>
 </blockquote>
-</div>
-<div id="examples" class="section level2">
-<h2>Examples</h2>
-<ol style="list-style-type: decimal">
+
+<h2 id="examples">Examples</h2>
+
+<ol>
 <li>Cluster customers based on their purchase histories</li>
 <li>Cluster products based on the sets of customers who purchased them</li>
 <li>Cluster documents based on similar words or shingles</li>
 <li>Cluster DNA sequences based on edit distance</li>
 </ol>
-</div>
-<div id="methods" class="section level2">
-<h2>Methods</h2>
+
+<h2 id="methods">Methods</h2>
+
 <ul>
 <li>Hierarchical (AgglomeraHve):
-<ol style="list-style-type: decimal">
+
+<ol>
 <li>Initially, each point in cluster by itself.</li>
 <li>Repeatedly combine the two “nearest” clusters into one.</li>
 </ol></li>
 <li>Point Assignment:
-<ol style="list-style-type: decimal">
+
+<ol>
 <li>Maintain a set of clusters.</li>
-<li>Place points into their “nearest” cluster.</li>
+<li>Place points into their “nearest” cluster.
+<br /></li>
 </ol></li>
 </ul>
-</div>
 
 
   <footer>
