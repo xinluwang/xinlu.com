@@ -1,3 +1,3 @@
 ---
-title: "Research Projects and Publications"
+title: "Research Projects"
 ---
