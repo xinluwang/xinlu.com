@@ -4,7 +4,7 @@ title: "Teaching courses"
 
 ### 1. Textual Analysis using Python
 
-[*Code*](/./teaching/text-python/00-read-file.ipynb)
+![](/./teaching/text-python/00-read-file.ipynb)
 
-[*Slides*](/./teaching/text-python/Text Analysis in Accounting Research.pdf)
+[*Code and Slides*](https://www.jianguoyun.com/p/DfiQC3QQo8WWBhj4k8IB)
 

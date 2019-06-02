@@ -269,7 +269,7 @@ Email: xinlu.wang@outlook.com
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/research/</guid>
-      <description>pdf</description>
+      <description></description>
     </item>
     
     <item>
@@ -278,8 +278,7 @@ Email: xinlu.wang@outlook.com
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/teaching/</guid>
-      <description>1. Textual Analysis using Python Code
-Slides</description>
+      <description>1. Textual Analysis using Python Code and Slides</description>
     </item>
     
   </channel>
