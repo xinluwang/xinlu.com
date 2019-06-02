@@ -15,15 +15,19 @@ Therefore, we need *embedding*: using a much lower dimension vector to represent
 
 ### 1. the words in real estate ad to predict house price
 
-<img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162726.png" alt="post ads for house price" width="90%"/>
+<img src="http://ww4.sinaimg.cn/large/006tNc79gy1g3mu9pu5lmj30xg0i8td9.jpg" alt="post ads for house price" width="90%"/>
 
 ### 2. classification of hand drawing
 
-<img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162553.png" alt="hand-drawing classifications " width="95%"/>
+<img src="http://ww1.sinaimg.cn/large/006tNc79gy1g3muaqzpeij315a0kcqac.jpg" alt="hand-drawing classifications " width="95%"/>
 
 ### 3. movie recommendations 
-![](/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162648.png)
+
+![](http://ww4.sinaimg.cn/large/006tNc79gy1g3mub97wbyj314u0jsjyi.jpg)
 
 ## Rule of Thumb for Choosing Dimensions
 
-<img src="/post/2019-01-01-embeddings-categorical-input-data_files/Jietu20190101-162108@2x.png" alt="" width="120%"/>
+![](http://ww3.sinaimg.cn/large/006tNc79gy1g3mubrrqgrj318s0d6jtq.jpg)
+
+
+ 
