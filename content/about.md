@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-![](./about/logo.jpg)
+<center><img src= "/./about/logo.jpg", width = "90%" /> <center>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
