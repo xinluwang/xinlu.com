@@ -2,4 +2,4 @@
 title: "Research Projects"
 ---
 
-![*pdf*](/./Research/sic2-wordcloud.pdf)
+![Word Cloud of Risk Factors](/./Research/jietu.png)

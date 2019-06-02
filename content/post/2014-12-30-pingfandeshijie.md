@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《平凡的世界》读书笔记"
+title: "《平凡的世界》摘句"
 date: 2014-12-30
 categories:
 - 读书笔记
