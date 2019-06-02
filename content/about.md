@@ -2,10 +2,12 @@
 title: "About Me"
 ---
 
-<center><img src= "/./about/logo.jpg", width = "40%" /> <center>
+<center><img src= "/./about/logo.jpg", width = "35%" /> <center>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; 
 *In God we trust, all others bring data.*
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
