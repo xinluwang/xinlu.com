@@ -2,6 +2,9 @@
 title: "About Me"
 ---
 
+![](./images/logo.jpg)
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 *In God we trust, all others bring data.*
 
