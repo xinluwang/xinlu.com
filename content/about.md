@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-<center><img src= "/./about/logo.jpg", width = "90%" /> <center>
+<center><img src= "/./about/logo.jpg", width = "40%" /> <center>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

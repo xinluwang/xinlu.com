@@ -2,4 +2,4 @@
 title: "Research Projects"
 ---
 
-[**pdf**]()
+[*pdf*](/./Research/sic2-wordcloud.pdf)
