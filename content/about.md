@@ -2,7 +2,7 @@
 title: "About Me"
 ---
 
-![](./images/logo.jpg)
+![](./about/logo.jpg)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
