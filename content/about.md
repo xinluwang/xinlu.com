@@ -15,8 +15,8 @@ title: "About Me"
 
 <br>
 
-I am **Xinlu (Sean) Wang** , an Associate Professor specialized in Research on corporate accounting and finance, currently working at SWUFE.              
-I love to manipulate and visualize data using R and Python.      
+I am **Xinlu (Sean) Wang** , an Associate Professor specialized in Research on corporate accounting and finance, currently working at **Jinan University**.              
+I love to manipulate and visualize data using Python and R.      
 
 
 **Email:** xinlu.wang@outlook.com
