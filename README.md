@@ -1,2 +1,1 @@
-# xinlu.com
-Blogs
+Personal Blogs
